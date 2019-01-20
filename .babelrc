@@ -1,0 +1,36 @@
+{
+  "presets": ["next/babel", "@babel/flow"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "emotion",
+      {
+        "sourceMap": false,
+        "autoLabel": true,
+        "labelFormat": "[filename]--[local]",
+        "cssPropOptimization": true
+      }
+    ],
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "convertStyleToAttrs": false
+            },
+            {
+              "removeAttrs": { "attrs": "fill" }
+            },
+            {
+              "addClassesToSVGElement": {
+                "classNames": ["bb-svg-icon"]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  ]
+}

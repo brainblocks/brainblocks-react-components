@@ -1,3 +1,5 @@
+import './styles'
+
 export Alert from './components/alert/Alert'
 export AmountField from './components/amount-field/AmountField'
 export Button from './components/button/Button'

@@ -1,4 +1,5 @@
-import './styles'
+import * as styles from './styles'
+export { styles }
 
 export Alert from './components/alert/Alert'
 export AmountField from './components/amount-field/AmountField'

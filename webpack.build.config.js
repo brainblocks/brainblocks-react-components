@@ -19,6 +19,7 @@ module.exports = {
     ]
   },
   externals: {
-    react: 'commonjs react'
+    react: 'commonjs react',
+    destyle: 'commonjs destyle'
   }
 }

@@ -4,6 +4,7 @@
 import './components/example-component/example-component.style'
 
 import './components/alert/alert.style'
+import './components/collapse-tabs/collapse-tabs.style'
 import './components/color-choice/color-choice.style'
 import './components/snackbar/snackbar.style'
 import './components/amount-field/amount-field.style'

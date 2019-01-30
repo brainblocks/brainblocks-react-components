@@ -6,6 +6,8 @@ import { cx } from 'emotion'
 import { destyle } from 'destyle'
 
 type Props = {
+  destyleMerge: Object,
+  children: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object
 }

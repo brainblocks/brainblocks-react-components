@@ -11,8 +11,8 @@ type Props = {
   editing: number,
   nanoFormatted: string,
   fiatFormatted: string,
-  onSwitchCurrency: func,
-  onChange: func,
+  onSwitchCurrency: () => {},
+  onChange: () => {},
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object
 }

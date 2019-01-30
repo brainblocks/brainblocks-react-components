@@ -8,11 +8,20 @@ type Props = {
   errorIcon: React.Node,
   infoIcon: React.Node,
   warningIcon: React.Node,
+  children: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object
 }
 
-export const Snackbar = ({ styles, children, ...rest }: Props) => (
+export const Snackbar = ({
+  styles,
+  children,
+  successIcon,
+  errorIcon,
+  infoIcon,
+  warningIcon,
+  ...rest
+}: Props) => (
   <SnackbarProvider
     maxSnack={3}
     anchorOrigin={{

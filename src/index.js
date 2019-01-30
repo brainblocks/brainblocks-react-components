@@ -4,6 +4,7 @@ export { styles }
 export Alert from './components/alert/Alert'
 export AmountField from './components/amount-field/AmountField'
 export Button from './components/button/Button'
+export CollapseTabs from './components/collapse-tabs/CollapseTabs'
 export ColorChoice from './components/color-choice/ColorChoice'
 export FormField from './components/form-field/FormField'
 export FormItem from './components/form-item/FormItem'

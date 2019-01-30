@@ -23,8 +23,8 @@ type Props = {
 /**
  * NanoAddress.
  */
-export class NanoAddress extends React.Component {
-  constructor(props) {
+export class NanoAddress extends React.Component<Props> {
+  constructor(props: Props) {
     super(props)
     this.state = {
       isHovering: false

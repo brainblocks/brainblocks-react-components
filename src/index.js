@@ -1,5 +1,7 @@
 import * as styles from './styles'
-export { styles }
+import { withSnackbar } from 'notistack'
+
+export { styles, withSnackbar }
 
 export Alert from './components/alert/Alert'
 export AmountField from './components/amount-field/AmountField'

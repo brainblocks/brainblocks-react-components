@@ -1,5 +1,5 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
+import { setStyles } from 'destyle'
 
 setStyles('BB-CollapseTabs', () => {
   return {

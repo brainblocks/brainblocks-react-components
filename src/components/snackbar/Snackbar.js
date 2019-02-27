@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react'
 import { destyle } from 'destyle'
+import { cx } from 'emotion'
 import { SnackbarProvider } from 'notistack'
 
 type Props = {
@@ -28,11 +29,11 @@ export const Snackbar = ({
     maxSnack: 3,
     anchorOrigin: { vertical: 'bottom', horizontal: 'right' },
     classes: {
-      root: styles.root,
-      variantSuccess: styles.success,
-      variantError: styles.error,
-      variantWarning: styles.warning,
-      variantInfo: styles.info
+      root: cx(styles.root),
+      variantSuccess: cx(styles.success),
+      variantError: cx(styles.error),
+      variantWarning: cx(styles.warning),
+      variantInfo: cx(styles.info)
     },
     iconVariant: {
       success: <div className={styles.iconSuccess}>{successIcon}</div>,

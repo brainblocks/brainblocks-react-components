@@ -55,6 +55,7 @@ export const CollapseTabs = ({
           <ul className={styles.collapsedList}>
             {tabs.map((tab, i) => (
               <li
+                key={`bb-collapsed-tab-${i}`}
                 className={styles.collapsedListItem}
                 onClick={() => onSelect(i)}
               >
@@ -78,7 +79,7 @@ export const CollapseTabs = ({
           </div>
           <div className={styles.tabPanels}>
             {tabs.map(tab => (
-              <TabPanel>
+              <TabPanel key={`bb-uncollapsed-tab-${i}`}>
                 <div className={styles.tabPanel}>{tab.content}</div>
               </TabPanel>
             ))}

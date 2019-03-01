@@ -11,6 +11,7 @@ type Props = {
   editing: number,
   nanoFormatted: string,
   fiatFormatted: string,
+  fiatCode?: string,
   onSwitchCurrency: () => {},
   onChange: () => {},
   /** Given by destyle. Do not pass this to the component as a prop. */
@@ -25,6 +26,7 @@ export const AmountField = ({
   editing,
   nanoFormatted,
   fiatFormatted,
+  fiatCode = 'USD',
   onSwitchCurrency,
   onChange,
   styles,
@@ -44,7 +46,7 @@ export const AmountField = ({
               />
             </span>
             <span className={styles.topLabel}>
-              {editing === 'nano' ? 'NANO' : 'USD'}
+              {editing === 'nano' ? 'NANO' : fiatCode}
             </span>
           </div>
           <div className={styles.bottomRow}>
@@ -52,7 +54,7 @@ export const AmountField = ({
               {editing === 'nano' ? fiatFormatted : nanoFormatted}
             </span>
             <span className={styles.bottomLabel}>
-              {editing === 'nano' ? 'USD' : 'NANO'}
+              {editing === 'nano' ? fiatCode : 'NANO'}
             </span>
           </div>
         </div>

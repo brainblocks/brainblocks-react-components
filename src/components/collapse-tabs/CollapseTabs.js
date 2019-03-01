@@ -70,16 +70,16 @@ export const CollapseTabs = ({
         <div className={styles.tabsRoot}>
           <div className={styles.tabs}>
             <TabList>
-              {tabs.map(tab => (
-                <Tab>
+              {tabs.map((tab, i) => (
+                <Tab key={`bb-uncollapsed-tab-${i}`}>
                   <div className={styles.tab}>{tab.title}</div>
                 </Tab>
               ))}
             </TabList>
           </div>
           <div className={styles.tabPanels}>
-            {tabs.map(tab => (
-              <TabPanel key={`bb-uncollapsed-tab-${i}`}>
+            {tabs.map((tab, i) => (
+              <TabPanel key={`bb-uncollapsed-tabpanel-${i}`}>
                 <div className={styles.tabPanel}>{tab.content}</div>
               </TabPanel>
             ))}

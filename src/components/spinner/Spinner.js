@@ -13,12 +13,11 @@ type Props = {
   styles: Object
 }
 
-export const Spinner = ({ styles, ...rest }: Props) => (
+export const Spinner = ({ styles, color, ...rest }: Props) => (
   <CircularProgress
     classes={{
-      root: styles.root
+      root: cx(styles.root)
     }}
-    className={styles.root}
     {...rest}
   />
 )

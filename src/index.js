@@ -6,6 +6,7 @@ export { styles, withSnackbar }
 export Alert from './components/alert/Alert'
 export AmountField from './components/amount-field/AmountField'
 export Button from './components/button/Button'
+export Checkbox from './components/checkbox/Checkbox'
 export CollapseTabs from './components/collapse-tabs/CollapseTabs'
 export ColorChoice from './components/color-choice/ColorChoice'
 export FormField from './components/form-field/FormField'

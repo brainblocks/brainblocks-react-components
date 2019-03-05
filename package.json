@@ -45,6 +45,8 @@
     "webpack-cli": "^3.2.1"
   },
   "sideEffects": [
-    "./src/destyleConfig.js"
+    "./src/destyleConfig.js",
+    "./src/styles.js",
+    "./src/components/**/*.style.js"
   ]
 }

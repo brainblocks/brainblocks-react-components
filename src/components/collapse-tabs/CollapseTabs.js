@@ -26,11 +26,13 @@ type Props = {
   /** Back button content */
   backButtonContent?: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 export const CollapseTabs = ({
   styles,
+  destyleMerge,
   collapsed = false,
   viewingTab = false,
   activeTab,

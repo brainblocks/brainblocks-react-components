@@ -7,13 +7,20 @@ type Props = {
   /** Only used by destyle */
   size: number,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
  * Checkbox.
  */
-export const Checkbox = ({ styles, label, size, ...rest }: Props) => {
+export const Checkbox = ({
+  styles,
+  label,
+  size,
+  destyleMerge,
+  ...rest
+}: Props) => {
   return (
     <label className={styles.root}>
       <input type="checkbox" className={styles.checkbox} {...rest} />

@@ -18,7 +18,8 @@ type GridItemProps = {
   /** Grid item contents */
   children: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -33,6 +34,7 @@ export const GridItem = ({
   spanLg,
   children,
   styles,
+  destyleMerge,
   ...rest
 }: GridItemProps) => {
   return (

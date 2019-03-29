@@ -12,7 +12,8 @@ type Props = {
   spaceBelow?: number,
   children: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -20,6 +21,7 @@ type Props = {
  */
 export const Typography = ({
   styles,
+  destyleMerge,
   el = 'span',
   size,
   color,

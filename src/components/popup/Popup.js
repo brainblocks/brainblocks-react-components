@@ -8,13 +8,14 @@ type Props = {
   /** Popup contents */
   children?: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
  * Popup.
  */
-export const Popup = ({ styles, children, ...rest }: Props) => {
+export const Popup = ({ styles, children, destyleMerge, ...rest }: Props) => {
   return (
     <Modal {...rest}>
       <div className={styles.root} style={{ background: 'white' }}>

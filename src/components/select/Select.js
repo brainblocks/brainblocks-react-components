@@ -9,7 +9,8 @@ type Props = {
   value: string,
   options: Array<{ value: mixed, title: string, disabled?: boolean }>,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -17,6 +18,7 @@ type Props = {
  */
 export const Select = ({
   styles,
+  destyleMerge,
   options,
   onChange,
   value,

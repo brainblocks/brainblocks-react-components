@@ -12,7 +12,8 @@ type Props = {
   /** Only used for styling */
   variant?: 'success' | 'error' | 'warning' | 'info',
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -22,6 +23,7 @@ export const Alert = ({
   styles,
   children,
   variant = 'info',
+  destyleMerge,
   ...rest
 }: Props) => {
   let Icon = InfoIcon

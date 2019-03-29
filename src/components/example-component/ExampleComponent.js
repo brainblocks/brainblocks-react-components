@@ -10,7 +10,8 @@ type Props = {
   children: React.Node,
   type?: 'primary' | 'secondary',
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -18,6 +19,7 @@ type Props = {
  */
 export const ExampleComponent = ({
   styles,
+  destyleMerge,
   onClick,
   children,
   type = 'secondary',

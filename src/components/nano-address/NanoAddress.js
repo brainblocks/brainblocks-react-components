@@ -17,7 +17,8 @@ type Props = {
   /** Number of characters after ellipsis */
   endChars: number,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -46,6 +47,7 @@ export class NanoAddress extends React.Component<Props> {
   render() {
     const {
       styles,
+      destyleMerge,
       address,
       startChars = 10,
       endChars = 5,

@@ -9,13 +9,20 @@ type GridProps = {
   /** Grid contents */
   children: React.ChildrenArray<React.Element<typeof GridItem>>,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
  * Grid.
  */
-export const Grid = ({ styles, gutter = 20, children, ...rest }: GridProps) => {
+export const Grid = ({
+  styles,
+  gutter = 20,
+  children,
+  destyleMerge,
+  ...rest
+}: GridProps) => {
   return (
     <div className={styles.root} {...rest}>
       {children}

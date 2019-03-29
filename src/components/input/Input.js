@@ -11,7 +11,8 @@ type Props = {
   /** Component must always be controlled */
   value: string,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -23,6 +24,7 @@ export const Input = ({
   onChange,
   value,
   rows = 3,
+  destyleMerge,
   ...rest
 }: Props) => {
   const El = multiline ? 'textarea' : 'input'

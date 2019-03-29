@@ -10,7 +10,8 @@ type Props = {
   /** Dom element for value */
   valueEl?: string,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -24,6 +25,7 @@ export const KeyValue = ({
   value,
   keyEl = 'dt',
   valueEl = 'dd',
+  destyleMerge,
   ...rest
 }: Props) => {
   const Wrapper = keyEl === 'dt' ? 'dl' : 'div'

@@ -13,7 +13,8 @@ type Props = {
   /** Arbitrary theme which can be used for styling */
   theme?: string,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -26,6 +27,7 @@ export const FormField = ({
   adornEnd,
   theme,
   valid,
+  destyleMerge,
   ...rest
 }: Props) => {
   return (

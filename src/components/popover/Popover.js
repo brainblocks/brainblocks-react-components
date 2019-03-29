@@ -6,10 +6,11 @@ import MUIPopover from '@material-ui/core/Popover'
 
 type Props = {
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
-export const Popover = ({ styles, ...rest }: Props) => (
+export const Popover = ({ styles, destyleMerge, ...rest }: Props) => (
   <MUIPopover classes={{ paper: cx(styles.root) }} {...rest} />
 )
 

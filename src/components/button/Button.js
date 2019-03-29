@@ -23,7 +23,8 @@ type Props = {
   disabled?: boolean,
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object,
-  destyleNames: string
+  destyleNames?: string,
+  destyleMerge?: Object
 }
 
 /**

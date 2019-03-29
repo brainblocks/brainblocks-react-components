@@ -12,11 +12,13 @@ type Props = {
   children: React.Node,
   notistackProps: Object,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 export const Snackbar = ({
   styles,
+  destyleMerge,
   children,
   successIcon,
   errorIcon,

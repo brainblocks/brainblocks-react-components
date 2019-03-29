@@ -9,13 +9,14 @@ type Props = {
   /** Menu contents */
   children?: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
  * Menu.
  */
-export const Menu = ({ styles, children, ...rest }: Props) => {
+export const Menu = ({ styles, children, destyleMerge, ...rest }: Props) => {
   return (
     <MUIMenu
       anchorOrigin={{

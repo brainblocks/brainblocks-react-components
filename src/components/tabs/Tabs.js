@@ -10,7 +10,8 @@ type Props = {
   /** Used by destyle for styling */
   variant?: string,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -24,6 +25,7 @@ const Tabs = ({
   activeTabLeft,
   variant,
   styles,
+  destyleMerge,
   ...rest
 }: Props) => (
   <ReactTabs className={styles.tabs} {...rest}>

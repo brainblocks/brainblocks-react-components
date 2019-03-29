@@ -1,37 +1,58 @@
 Example:
 
 ```js
+const nanoPrice = 1.24
 function convert(val, from, nanoPrice) {
   if (!nanoPrice) return 0
   return from === 'nano' ? val * nanoPrice : val / nanoPrice
 }
+function formatNano(nanoVal, decimals = 3) {
+  return new Intl.NumberFormat('en-US', {
+    maximumFractionDigits: decimals,
+    minimumFractionDigits: 2
+  }).format(nanoVal)
+}
+function formatFiat(fiatVal, currency = 'USD') {
+  try {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency
+    }).format(fiatVal)
+  } catch (e) {
+    const number = new Intl.NumberFormat('en-US').format(fiatVal)
+    return `${number} ${currency.toUpperCase()}`
+  }
+}
+function getAmounts(state) {
+  const nano =
+    state.editing === 'nano'
+      ? state.value
+      : convert(state.value, 'fiat', nanoPrice)
+  const fiat =
+    state.editing === 'fiat'
+      ? state.value
+      : convert(state.value, 'nano', nanoPrice)
+  return { nano, fiat }
+}
 initialState = {
-  conversionRate: 0.5,
-  topCurrency: 'nano',
-  topAmount: 2,
-  bottomCurrency: 'fiat',
-  bottomAmount: 1
+  editing: 'nano',
+  value: 0
 }
 ;<AmountField
-  value={state.topAmount}
-  topCurrency={state.topCurrency}
-  bottomAmount={state.bottomAmount}
-  bottomCurrency={state.bottomCurrency}
-  onChange={newAmount =>
+  value={state.value}
+  editing={state.editing}
+  fiatCode="USD"
+  nanoFormatted={formatNano(getAmounts(state).nano)}
+  fiatFormatted={formatFiat(getAmounts(state).fiat)}
+  onChange={e =>
     setState({
-      bottomAmount: convert(newAmount, state.topCurrency, state.conversionRate)
+      value: e.target.value
     })
   }
   onSwitchCurrency={() => {
-    setState({
-      topCurrency: state.bottomCurrency,
-      bottomCurrency: state.topCurrency,
-      bottomAmount: convert(
-        state.topAmount,
-        state.bottomCurrency,
-        state.conversionRate
-      )
-    })
+    setState(oldState => ({
+      editing: oldState.editing === 'nano' ? 'fiat' : 'nano'
+    }))
   }}
 />
 ```

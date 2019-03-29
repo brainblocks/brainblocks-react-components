@@ -10,10 +10,11 @@ type Props = {
   /** Size (and any other MaterialUI CircularProgress props) */
   size?: number,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
-export const Spinner = ({ styles, color, ...rest }: Props) => (
+export const Spinner = ({ styles, color, destyleMerge, ...rest }: Props) => (
   <CircularProgress
     classes={{
       root: cx(styles.root)

@@ -15,7 +15,8 @@ type Props = {
   onSwitchCurrency: () => {},
   onChange: () => {},
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -30,6 +31,7 @@ export const AmountField = ({
   onSwitchCurrency,
   onChange,
   styles,
+  destyleMerge,
   ...rest
 }: Props) => {
   return (
@@ -43,6 +45,7 @@ export const AmountField = ({
                 value={value}
                 type="number"
                 onChange={onChange}
+                {...rest}
               />
             </span>
             <span className={styles.topLabel}>

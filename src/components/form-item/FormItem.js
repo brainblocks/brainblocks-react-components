@@ -15,6 +15,8 @@ type Props = {
   children: React.Node,
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object,
+  destyleMerge?: Object,
+  /** Error message */
   error: string | React.Node
 }
 
@@ -25,6 +27,7 @@ type Props = {
  */
 export const FormItem = ({
   styles,
+  destyleMerge,
   fieldId,
   label,
   description,

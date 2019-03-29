@@ -7,13 +7,14 @@ import { destyle } from 'destyle'
 type Props = {
   /** Tooltip contents */
   children?: React.Node,
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
  * Tooltip.
  */
-export const Tooltip = ({ styles, children, ...rest }: Props) => {
+export const Tooltip = ({ styles, children, destyleMerge, ...rest }: Props) => {
   return (
     <MUITooltip className={styles.root} {...rest}>
       {children}

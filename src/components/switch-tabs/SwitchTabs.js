@@ -7,7 +7,8 @@ const { Tabs, Tab, TabList, TabPanel } = TabsComponents
 
 type Props = {
   selectedIndex: number,
-  children: React.Node
+  children: React.Node,
+  destyleMerge?: Object
 }
 
 /**
@@ -25,7 +26,7 @@ class SwitchTabs extends React.Component<Props> {
   }
 
   render() {
-    const { children, selectedIndex, ...rest } = this.props
+    const { children, selectedIndex, destyleMerge, ...rest } = this.props
     let activeTab: ?HTMLElement
     let tabLeft = 0
     let tabWidth = 0

@@ -10,7 +10,8 @@ type Props = {
   /** Current value */
   value: string,
   /** Given by destyle. Do not pass this to the component as a prop. */
-  styles: Object
+  styles: Object,
+  destyleMerge?: Object
 }
 
 /**
@@ -20,6 +21,7 @@ type Props = {
  */
 export const ColorChoice = ({
   styles,
+  destyleMerge,
   options,
   onChange,
   value,

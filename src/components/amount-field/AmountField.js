@@ -7,13 +7,22 @@ import SwitchIcon from 'mdi-react/SwapVerticalIcon'
 import { destyle } from 'destyle'
 
 type Props = {
+  /** Value of the field (always the same) */
   value: number,
-  editing: number,
+  /** Which value is currently being edited? */
+  editing: 'nano' | 'fiat',
+  /** Do the conversion, then format it, then put that here */
   nanoFormatted: string,
+  /** Do the conversion, then format it, then put that here */
   fiatFormatted: string,
+  /** E.g. 'USD' */
   fiatCode?: string,
-  onSwitchCurrency: () => {},
-  onChange: () => {},
+  /** Event handler for the switch button */
+  onSwitchCurrency: () => void,
+  /** Event handler for change event */
+  onChange: () => void,
+  /** Props to pass to the FormField component (E.g. `valid`) */
+  formFieldProps?: Object,
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object,
   destyleMerge?: Object
@@ -21,6 +30,9 @@ type Props = {
 
 /**
  * AmountField.
+ *
+ * ### Important note
+ * It's up to you to convert the values, format them, and pass them in for display purposes. It's also up to you to convert the value to Nano or Fiat on form submission.
  */
 export const AmountField = ({
   value = 0,
@@ -32,10 +44,11 @@ export const AmountField = ({
   onChange,
   styles,
   destyleMerge,
+  formFieldProps,
   ...rest
 }: Props) => {
   return (
-    <FormField>
+    <FormField {...formFieldProps}>
       <div className={styles.root}>
         <div className={styles.content}>
           <div className={styles.topRow}>

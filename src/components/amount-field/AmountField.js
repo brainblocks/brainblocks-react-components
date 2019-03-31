@@ -57,6 +57,8 @@ export const AmountField = ({
                 destyleMerge={{ root: styles.input }}
                 value={value}
                 type="number"
+                min="0"
+                step="any"
                 onChange={onChange}
                 {...rest}
               />

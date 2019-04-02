@@ -20,6 +20,7 @@ module.exports = {
   },
   externals: {
     react: 'commonjs react',
-    destyle: 'commonjs destyle'
+    destyle: 'commonjs destyle',
+    emotion: 'commonjs emotion'
   }
 }

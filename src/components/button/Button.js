@@ -41,7 +41,6 @@ export const Button = ({
   variant = 'secondary',
   destyleMerge,
   destyleNames,
-  color,
   loading = false,
   ...rest
 }: Props) => {

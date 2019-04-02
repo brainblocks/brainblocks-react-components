@@ -14,7 +14,7 @@ addStyles('BB-ColorChoice', props => ({
     position: relative;
     ${props.options.map(
       (color, i) => css`
-        &:nth-child(${i + 1}) {
+        &:nth-of-type(${i + 1}) {
           background: ${color};
         }
       `

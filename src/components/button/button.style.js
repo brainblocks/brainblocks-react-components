@@ -27,7 +27,7 @@ addStyles('BB-Button', props => ({
       transition: opacity 0.2s linear;
       ${props.loading &&
         css`
-          > span:first-child {
+          > span:first-of-type {
             opacity: 0;
             visibility: hidden;
           }

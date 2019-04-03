@@ -1,13 +1,11 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
 /**
  * Styles here are an example. It's probably best to use
- * setStyles (instead of addStyles) in your implementation
- * to override these.
+ * these as an example rather than including them.
  */
-addStyles('BB-Checkbox', props => {
+const styleFunc = props => {
   const size = props.size || 24
   return {
     root: css`
@@ -36,4 +34,6 @@ addStyles('BB-Checkbox', props => {
     `,
     label: css``
   }
-})
+}
+
+export default styleFunc

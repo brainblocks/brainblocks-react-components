@@ -1,8 +1,7 @@
-import { addStyles } from 'destyle'
 import { css } from 'emotion'
 import theme from '../../theme'
 
-addStyles('BB-Example', props => ({
+const styleFunc = props => ({
   root: css`
     background: #eee;
     ${props.type === 'primary' &&
@@ -11,4 +10,6 @@ addStyles('BB-Example', props => ({
         color: #fff;
       `};
   `
-}))
+})
+
+export default styleFunc

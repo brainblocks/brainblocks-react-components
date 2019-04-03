@@ -1,5 +1,8 @@
 ```js
-<div>
+const styles = require('./typography.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Typography', props => styles(props))
+;<div>
   <Typography el="h1" spaceBelow={1}>
     Heading 1
   </Typography>

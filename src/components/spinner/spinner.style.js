@@ -1,9 +1,8 @@
-import { addStyles } from 'destyle'
 import { css } from 'emotion'
 import theme from '../../theme'
 
-addStyles('BB-Spinner', props => ({
+export default props => ({
   root: css`
     color: ${props.color};
   `
-}))
+})

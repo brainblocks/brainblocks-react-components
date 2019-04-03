@@ -1,8 +1,11 @@
 Example:
 
 ```js
-// This import format is required for styleguidist
-// Usually it would be import MenuItem from '~/bb-components/grid/MenuItem'
+const menu = require('./menu.style').menu
+const menuItem = require('./menu.style').menuItem
+const addStyles = require('destyle').addStyles
+addStyles('BB-Menu', props => menu(props))
+addStyles('BB-MenuItem', props => menuItem(props))
 const MenuItem = require('./MenuItem').default
 initialState = { anchorEl: null }
 ;<div>

@@ -1,8 +1,7 @@
-import { addStyles } from 'destyle'
 import { css } from 'emotion'
 import theme from '../../theme'
 
-addStyles('BB-AmountField', {
+const styleFunc = props => ({
   root: css`
     display: flex;
     align-items: center;
@@ -37,3 +36,5 @@ addStyles('BB-AmountField', {
     margin-left: 8px;
   `
 })
+
+export default styleFunc

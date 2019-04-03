@@ -1,12 +1,11 @@
-import { addStyles } from 'destyle'
 import { css } from 'emotion'
 import theme from '../../theme'
 
-addStyles('BB-Menu', {
+export const menu = props => ({
   root: css``
 })
 
-addStyles('BB-MenuItem', {
+export const menuItem = props => ({
   root: css``,
   selected: css``
 })

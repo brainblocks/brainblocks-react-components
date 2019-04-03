@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react'
-
 import { MenuItem as MUIMenuItem } from '@material-ui/core'
 import { cx } from 'emotion'
 import { destyle } from 'destyle'

@@ -1,7 +1,6 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 
-addStyles('BB-Alert', props => ({
+const styleFunc = props => ({
   root: css`
     display: flex;
     padding: 16px;
@@ -37,4 +36,6 @@ addStyles('BB-Alert', props => ({
       text-decoration: underline;
     }
   `
-}))
+})
+
+export default styleFunc

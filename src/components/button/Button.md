@@ -3,6 +3,9 @@ Button example:
 Props are spread to the root element, so if you use `el="a"` you can add `href`, `target`, etc. If you use `el="button"` (the default) you can add `onClick`, etc.
 
 ```js
+const styles = require('./button.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Button', props => styles(props))
 const UserIcon = require('mdi-react/UserIcon')
 ;<div
   style={{

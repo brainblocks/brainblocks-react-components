@@ -7,7 +7,7 @@
       "emotion",
       {
         "sourceMap": false,
-        "autoLabel": false,
+        "autoLabel": true,
         "labelFormat": "[filename]--[local]",
         "cssPropOptimization": true
       }

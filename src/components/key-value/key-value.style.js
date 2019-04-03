@@ -1,8 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
-addStyles('BB-KeyValue', {
+export default props => ({
   root: css`
     display: block;
     list-style: none;

@@ -1,6 +1,9 @@
 Text field example:
 
 ```js
+const styles = require('./checkbox.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Checkbox', props => styles(props))
 initialState = { isCheckboxChecked: false }
 ;<div style={{ display: 'flex', justifyContent: 'space-around' }}>
   <Checkbox

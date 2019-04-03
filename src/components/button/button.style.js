@@ -1,9 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
-import { Hidden } from '@material-ui/core'
 
-addStyles('BB-Button', props => ({
+const styleFunc = props => ({
   root: css`
     background: ${props.color ? props.color : '#eee'};
     display: inline-block;
@@ -43,4 +41,6 @@ addStyles('BB-Button', props => ({
     transform: translate(-50%, -50%);
   `,
   spinner: css``
-}))
+})
+
+export default styleFunc

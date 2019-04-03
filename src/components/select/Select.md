@@ -1,4 +1,7 @@
 ```js
+const styles = require('./select.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Select', props => styles(props))
 initialState = { val1: 'one' }
 ;<div style={{ display: 'flex', justifyContent: 'space-around' }}>
   <Select

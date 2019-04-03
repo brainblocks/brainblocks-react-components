@@ -1,6 +1,9 @@
 Example:
 
 ```js
+const styles = require('./spinner.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Spinner', props => styles(props))
 ;<div
   style={{
     display: 'flex',

@@ -1,7 +1,10 @@
 Simple example:
 
 ```js
-<div>
+const styles = require('./nano-address.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-NanoAddress', props => styles(props))
+;<div>
   <p>
     <NanoAddress address="xrb_1brainb3zz81wmhxndsbrjb94hx3fhr1fyydmg6iresyk76f3k7y7jiazoji" />
   </p>
@@ -11,7 +14,10 @@ Simple example:
 Example with copy button:
 
 ```js
-<div>
+const styles = require('./nano-address.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-NanoAddress', props => styles(props))
+;<div>
   <p>
     <NanoAddress
       copyable
@@ -24,7 +30,10 @@ Example with copy button:
 Example with copy button and character length:
 
 ```js
-<div>
+const styles = require('./nano-address.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-NanoAddress', props => styles(props))
+;<div>
   <p>
     <NanoAddress
       copyable
@@ -39,7 +48,10 @@ Example with copy button and character length:
 Example with hoverable copy button:
 
 ```js
-<div>
+const styles = require('./nano-address.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-NanoAddress', props => styles(props))
+;<div>
   <p>
     <NanoAddress
       style={{ height: '40px' }}

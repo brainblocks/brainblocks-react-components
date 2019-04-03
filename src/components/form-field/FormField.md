@@ -3,6 +3,9 @@ For a full example of creating a form field, see FormItem.
 Input examples:
 
 ```js
+const styles = require('./form-field.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-FormField', props => styles(props))
 const Input = require('../input/Input').default
 const UserIcon = require('mdi-react/UserIcon')
 ;<div

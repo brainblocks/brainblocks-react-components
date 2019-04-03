@@ -1,8 +1,9 @@
 Grid example:
 
 ```js
-// This import format is required for styleguidist
-// Usually it would be import GridItem from '~/bb-components/grid/GridItem'
+const styles = require('./grid.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Grid', props => styles(props))
 const GridItem = require('./GridItem').default
 const style = { background: 'lightblue' }
 ;<Grid>

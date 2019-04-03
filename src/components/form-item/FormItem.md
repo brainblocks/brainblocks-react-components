@@ -1,6 +1,9 @@
 Examples:
 
 ```js
+const styles = require('./form-item.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-FormItem', props => styles(props))
 const FormField = require('../form-field/FormField').default
 const Input = require('../input/Input').default
 const Button = require('../button/Button').default

@@ -1,8 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
-addStyles('BB-ColorChoice', props => ({
+const styleFunc = props => ({
   root: css`
     display: flex;
   `,
@@ -40,4 +39,6 @@ addStyles('BB-ColorChoice', props => ({
       border: 2px solid #555;
     }
   `
-}))
+})
+
+export default styleFunc

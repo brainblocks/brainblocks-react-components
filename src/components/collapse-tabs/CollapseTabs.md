@@ -1,4 +1,7 @@
 ```js
+const styles = require('./collapse-tabs.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-CollapseTabs', props => styles(props))
 initialState = { activeTab: 0, collapsed: false, viewingTab: false }
 onSelect = i => {
   setState({

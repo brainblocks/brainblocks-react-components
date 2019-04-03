@@ -1,6 +1,9 @@
 Text field example:
 
 ```js
+const styles = require('./input.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Input', props => styles(props))
 initialState = { val1: 'Abcd' }
 ;<div style={{ display: 'flex', justifyContent: 'space-around' }}>
   <Input

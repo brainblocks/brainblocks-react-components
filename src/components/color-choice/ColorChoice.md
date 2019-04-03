@@ -1,6 +1,9 @@
 Example:
 
 ```js
+const styles = require('./color-choice.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-ColorChoice', props => styles(props))
 const FormField = require('../form-field/FormField').default
 const FormItem = require('../form-item/FormItem').default
 initialState = { value: 'green' }

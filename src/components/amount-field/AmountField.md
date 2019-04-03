@@ -1,6 +1,9 @@
 Example:
 
 ```js
+const styles = require('./amount-field.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-AmountField', props => styles(props))
 const nanoPrice = 1.24
 function convert(val, from, nanoPrice) {
   if (!nanoPrice) return 0

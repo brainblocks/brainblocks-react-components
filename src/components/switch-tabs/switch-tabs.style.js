@@ -1,10 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
-addStyles('BB-SwitchTabs', ({ activeTabLeft, activeTabWidth }) => {
-  console.log(activeTabLeft, activeTabWidth)
-
+export default ({ activeTabLeft, activeTabWidth }) => {
   return {
     tabs: css`
       text-align: center;
@@ -33,4 +30,4 @@ addStyles('BB-SwitchTabs', ({ activeTabLeft, activeTabWidth }) => {
       }
     `
   }
-})
+}

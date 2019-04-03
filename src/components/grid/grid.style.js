@@ -1,8 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
-addStyles('BB-Grid', props => ({
+export default props => ({
   root: css`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -56,4 +55,4 @@ addStyles('BB-Grid', props => ({
         : null
     }
   `
-}))
+})

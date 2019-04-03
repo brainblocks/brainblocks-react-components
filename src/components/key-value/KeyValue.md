@@ -1,7 +1,10 @@
 Examples:
 
 ```js
-<div style={{ display: 'flex', justifyContent: 'space-around' }}>
+const styles = require('./key-value.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-KeyValue', props => styles(props))
+;<div style={{ display: 'flex', justifyContent: 'space-around' }}>
   <KeyValue label="Balance" value="1234.56" />
   <KeyValue label="Nano" value="3.21" keyEl="h3" valueEl="span" />
   <KeyValue

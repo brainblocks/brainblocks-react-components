@@ -1,8 +1,7 @@
-import { addStyles } from 'destyle'
 import { css } from 'emotion'
 import theme from '../../theme'
 
-addStyles('BB-Select', {
+export default props => ({
   root: css`
     appearance: none;
     border: 1px solid #eee;

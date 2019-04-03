@@ -1,6 +1,9 @@
 Example:
 
 ```js
+const styles = require('./popup.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Popup', props => styles(props))
 initialState = { open: false }
 ;<div>
   <Button onClick={() => setState({ open: true })}>Open Modal</Button>

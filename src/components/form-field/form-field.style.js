@@ -1,8 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
-addStyles('BB-FormField', {
+const styleFunc = props => ({
   root: css`
     display: flex;
     align-items: center;
@@ -17,3 +16,5 @@ addStyles('BB-FormField', {
     margin-left: 0.66em;
   `
 })
+
+export default styleFunc

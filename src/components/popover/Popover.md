@@ -1,6 +1,9 @@
 Example:
 
 ```js
+const styles = require('./popover.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-Popover', props => styles(props))
 const Button = require('../button/Button').default
 initialState = { open: false, anchorEl: null }
 ;<div>

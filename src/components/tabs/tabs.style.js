@@ -1,8 +1,7 @@
 import { css } from 'emotion'
-import { addStyles } from 'destyle'
 import theme from '../../theme'
 
-addStyles('BB-Tabs', props => {
+export default props => {
   switch (props.variant) {
     case 'switch':
       return {
@@ -47,4 +46,4 @@ addStyles('BB-Tabs', props => {
         tabPanelSelected: css``
       }
   }
-})
+}

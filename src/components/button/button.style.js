@@ -25,7 +25,7 @@ const styleFunc = props => ({
       transition: opacity 0.2s linear;
       ${props.loading &&
         css`
-          > span:first-of-type {
+          > span:first-child {
             opacity: 0;
             visibility: hidden;
           }

@@ -13,7 +13,7 @@ const styleFunc = props => ({
     position: relative;
     ${props.options.map(
       (color, i) => css`
-        &:nth-of-type(${i + 1}) {
+        &:nth-child(${i + 1}) {
           background: ${color};
         }
       `

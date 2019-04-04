@@ -16,6 +16,10 @@ type Props = {
   startChars: number,
   /** Number of characters after ellipsis */
   endChars: number,
+  /** Override start and end chars and show full address? */
+  showAll: boolean,
+  /** Event handler for copy event */
+  onCopy: () => mixed,
   /** Given by destyle. Do not pass this to the component as a prop. */
   styles: Object,
   destyleMerge?: Object
@@ -51,6 +55,7 @@ export class NanoAddress extends React.Component<Props> {
       address,
       startChars = 10,
       endChars = 5,
+      showAll = false,
       copyable = false,
       hoverable = false,
       onCopy,
@@ -66,9 +71,15 @@ export class NanoAddress extends React.Component<Props> {
         onMouseLeave={this.handleMouseLeave}
       >
         <span className={styles.address}>
-          <span className={styles.start}>{start}</span>
-          <span className={styles.ellipsis}>&hellip;</span>
-          <span className={styles.end}>{end}</span>
+          {showAll ? (
+            address
+          ) : (
+            <>
+              <span className={styles.start}>{start}</span>
+              <span className={styles.ellipsis}>&hellip;</span>
+              <span className={styles.end}>{end}</span>
+            </>
+          )}
         </span>
         {(copyable || (hoverable && this.state.isHovering)) && (
           <CopyToClipboard text={address} onCopy={onCopy}>

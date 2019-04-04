@@ -63,3 +63,20 @@ addStyles('BB-NanoAddress', props => styles(props))
   </p>
 </div>
 ```
+
+Example with full address:
+
+```js
+const styles = require('./nano-address.style').default
+const addStyles = require('destyle').addStyles
+addStyles('BB-NanoAddress', props => styles(props))
+;<div>
+  <p>
+    <NanoAddress
+      style={{ height: '40px' }}
+      showAll={true}
+      address="xrb_1brainb3zz81wmhxndsbrjb94hx3fhr1fyydmg6iresyk76f3k7y7jiazoji"
+    />
+  </p>
+</div>
+```

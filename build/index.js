@@ -23725,23 +23725,26 @@ object-assign
                   o = void 0 === r ? 10 : r,
                   a = e.endChars,
                   i = void 0 === a ? 5 : a,
-                  l = e.copyable,
+                  l = e.showAll,
                   u = void 0 !== l && l,
-                  s = e.hoverable,
+                  s = e.copyable,
                   c = void 0 !== s && s,
-                  f = e.onCopy,
-                  d = (jt(e, [
+                  f = e.hoverable,
+                  d = void 0 !== f && f,
+                  p = e.onCopy,
+                  h = (jt(e, [
                     'styles',
                     'destyleMerge',
                     'address',
                     'startChars',
                     'endChars',
+                    'showAll',
                     'copyable',
                     'hoverable',
                     'onCopy'
                   ]),
                   n.substr(0, o)),
-                  p = n.substr(n.length - i)
+                  m = n.substr(n.length - i)
                 return H.a.createElement(
                   'span',
                   {
@@ -23752,14 +23755,24 @@ object-assign
                   H.a.createElement(
                     'span',
                     { className: t.address },
-                    H.a.createElement('span', { className: t.start }, d),
-                    H.a.createElement('span', { className: t.ellipsis }, '…'),
-                    H.a.createElement('span', { className: t.end }, p)
+                    u
+                      ? n
+                      : H.a.createElement(
+                          H.a.Fragment,
+                          null,
+                          H.a.createElement('span', { className: t.start }, h),
+                          H.a.createElement(
+                            'span',
+                            { className: t.ellipsis },
+                            '…'
+                          ),
+                          H.a.createElement('span', { className: t.end }, m)
+                        )
                   ),
-                  (u || (c && this.state.isHovering)) &&
+                  (c || (d && this.state.isHovering)) &&
                     H.a.createElement(
                       _t.CopyToClipboard,
-                      { text: n, onCopy: f },
+                      { text: n, onCopy: p },
                       H.a.createElement(Pt.a, { className: t.icon, size: 22 })
                     )
                 )

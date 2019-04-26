@@ -22317,7 +22317,8 @@ object-assign
                 color: '#AAA',
                 size: 40,
                 iconSize: 32,
-                onClick: u
+                onClick: u,
+                type: 'button'
               },
               H.a.createElement(de.a, null)
             )

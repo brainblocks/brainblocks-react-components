@@ -83,6 +83,7 @@ export const AmountField = ({
             size={40}
             iconSize={32}
             onClick={onSwitchCurrency}
+            type="button"
           >
             <SwitchIcon />
           </Button>

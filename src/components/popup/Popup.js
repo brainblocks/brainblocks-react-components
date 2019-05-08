@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react'
 
-import Modal from '@material-ui/core/Modal'
+import Modal from '@material-ui/core/es/Modal'
 import { destyle } from 'destyle'
 
 type Props = {

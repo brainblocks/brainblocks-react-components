@@ -1,4 +1,6 @@
 var path = require('path')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 
 module.exports = {
   mode: 'production',
@@ -21,6 +23,12 @@ module.exports = {
   },
   externals: {
     react: 'commonjs react',
+    'react-dom': 'commonjs react-dom',
     destyle: 'commonjs destyle'
-  }
+  },
+  plugins: [
+    new BundleAnalyzerPlugin({
+      generateStatsFile: true
+    })
+  ]
 }

@@ -51,23 +51,20 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, r)
     }),
     (t.p = ''),
-    t((t.s = 130))
+    t((t.s = 115))
   )
 })({
   0: function(e, r) {
     e.exports = require('react')
   },
-  10: function(e, r) {
-    e.exports = require('destyle')
-  },
-  130: function(e, r, t) {
+  115: function(e, r, t) {
     'use strict'
     t.r(r),
       t.d(r, 'FormField', function() {
         return l
       })
     var n = t(0),
-      o = t(10)
+      o = t(8)
     function u(e, r) {
       if (null == e) return {}
       var t,
@@ -118,5 +115,8 @@ module.exports = (function(e) {
       )
     }
     r.default = Object(o.destyle)(l, 'BB-FormField')
+  },
+  8: function(e, r) {
+    e.exports = require('destyle')
   }
 })

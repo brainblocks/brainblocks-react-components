@@ -57,9 +57,6 @@ module.exports = (function(e) {
   0: function(e, r) {
     e.exports = require('react')
   },
-  10: function(e, r) {
-    e.exports = require('destyle')
-  },
   224: function(e, r, t) {
     'use strict'
     t.r(r),
@@ -67,7 +64,7 @@ module.exports = (function(e) {
         return c
       })
     var n = t(0),
-      o = t(10)
+      o = t(8)
     function u() {
       return (u =
         Object.assign ||
@@ -124,5 +121,8 @@ module.exports = (function(e) {
       return n.createElement(a, u({ className: r.root }, i), c)
     }
     r.default = Object(o.destyle)(c, 'BB-Typography')
+  },
+  8: function(e, r) {
+    e.exports = require('destyle')
   }
 })

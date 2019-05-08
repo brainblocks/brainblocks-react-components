@@ -51,23 +51,20 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (r.p = ''),
-    r((r.s = 206))
+    r((r.s = 156))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  10: function(e, t) {
-    e.exports = require('destyle')
-  },
-  206: function(e, t, r) {
+  156: function(e, t, r) {
     'use strict'
     r.r(t),
       r.d(t, 'Checkbox', function() {
         return a
       })
     var n = r(0),
-      o = r(10)
+      o = r(8)
     function l() {
       return (l =
         Object.assign ||
@@ -126,5 +123,8 @@ module.exports = (function(e) {
       )
     }
     t.default = Object(o.destyle)(a, 'BB-Checkbox')
+  },
+  8: function(e, t) {
+    e.exports = require('destyle')
   }
 })

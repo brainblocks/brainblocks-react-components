@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { destyle } from 'destyle'
 import { cx } from 'emotion'
-import CircularProgress from '@material-ui/core/CircularProgress'
+import CircularProgress from '@material-ui/core/es/CircularProgress'
 
 type Props = {
   /** Colour - a hex colour or a named theme colour. Only used by destyle. */

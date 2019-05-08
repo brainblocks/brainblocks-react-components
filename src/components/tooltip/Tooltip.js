@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react'
 
-import { Tooltip as MUITooltip } from '@material-ui/core'
+import MUITooltip from '@material-ui/core/es/Tooltip'
 import { destyle } from 'destyle'
 
 type Props = {

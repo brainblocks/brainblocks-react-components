@@ -1,14 +1,27 @@
 var path = require('path')
+const glob = require('glob')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin
 
+const entries = glob
+  .sync('./src/components/**/[A-Z]*.js')
+  .reduce((acc, item) => {
+    let name = item.replace('./src/components/', '')
+    let segments = name.split('/')
+    name = segments[1]
+    name = name.replace('.js', '')
+    acc[name] = item
+    return acc
+  }, {})
+entries.index = './src/index.js'
+
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: entries,
   target: 'node',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'index.js',
+    filename: '[name].js',
     libraryTarget: 'commonjs2'
   },
   module: {
@@ -28,7 +41,10 @@ module.exports = {
   },
   plugins: [
     new BundleAnalyzerPlugin({
-      generateStatsFile: true
+      generateStatsFile: true,
+      statsFilename: '../stats.json',
+      openAnalyzer: false,
+      analyzerMode: 'disabled'
     })
   ]
 }

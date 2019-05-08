@@ -51,7 +51,7 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (n.p = ''),
-    n((n.s = 225))
+    n((n.s = 222))
   )
 })([
   function(e, t) {
@@ -280,7 +280,7 @@ module.exports = (function(e) {
             case 883:
               if (45 === i.charCodeAt(8)) return '-webkit-' + i + i
               if (0 < i.indexOf('image-set(', 11))
-                return i.replace(S, '$1-webkit-$2') + i
+                return i.replace(w, '$1-webkit-$2') + i
               break
             case 932:
               if (45 === i.charCodeAt(4))
@@ -409,7 +409,7 @@ module.exports = (function(e) {
               if (45 !== i.charCodeAt(3) || 122 === i.charCodeAt(4)) break
             case 931:
             case 953:
-              if (!0 === w.test(e))
+              if (!0 === S.test(e))
                 return 115 ===
                   (s = e.substring(e.indexOf(':') + 1)).charCodeAt(0)
                   ? r(e.replace('stretch', 'fill-available'), t, n, a).replace(
@@ -481,7 +481,7 @@ module.exports = (function(e) {
         function s(e, n) {
           var u = e
           if ((33 > u.charCodeAt(0) && (u = u.trim()), (u = [u]), 0 < A)) {
-            var s = i(-1, n, u, u, P, j, 0, 0, 0, 0)
+            var s = i(-1, n, u, u, j, P, 0, 0, 0, 0)
             void 0 !== s && 'string' == typeof s && (n = s)
           }
           var f = (function e(n, u, s, f, d) {
@@ -493,37 +493,37 @@ module.exports = (function(e) {
                 k,
                 O = 0,
                 _ = 0,
-                w = 0,
                 S = 0,
+                w = 0,
                 T = 0,
                 R = 0,
-                D = (v = p = 0),
-                I = 0,
+                I = (v = p = 0),
+                D = 0,
                 L = 0,
                 W = 0,
                 U = 0,
                 z = s.length,
-                F = z - 1,
-                H = '',
-                V = '',
+                H = z - 1,
+                F = '',
                 G = '',
+                V = '',
                 q = '';
-              I < z;
+              D < z;
 
             ) {
               if (
-                ((h = s.charCodeAt(I)),
-                I === F &&
-                  0 !== _ + S + w + O &&
+                ((h = s.charCodeAt(D)),
+                D === H &&
+                  0 !== _ + w + S + O &&
                   (0 !== _ && (h = 47 === _ ? 10 : 47),
-                  (S = w = O = 0),
+                  (w = S = O = 0),
                   z++,
-                  F++),
-                0 === _ + S + w + O)
+                  H++),
+                0 === _ + w + S + O)
               ) {
                 if (
-                  I === F &&
-                  (0 < L && (H = H.replace(c, '')), 0 < H.trim().length)
+                  D === H &&
+                  (0 < L && (F = F.replace(c, '')), 0 < F.trim().length)
                 ) {
                   switch (h) {
                     case 32:
@@ -533,18 +533,18 @@ module.exports = (function(e) {
                     case 10:
                       break
                     default:
-                      H += s.charAt(I)
+                      F += s.charAt(D)
                   }
                   h = 59
                 }
                 switch (h) {
                   case 123:
                     for (
-                      p = (H = H.trim()).charCodeAt(0), v = 1, U = ++I;
-                      I < z;
+                      p = (F = F.trim()).charCodeAt(0), v = 1, U = ++D;
+                      D < z;
 
                     ) {
-                      switch ((h = s.charCodeAt(I))) {
+                      switch ((h = s.charCodeAt(D))) {
                         case 123:
                           v++
                           break
@@ -552,29 +552,29 @@ module.exports = (function(e) {
                           v--
                           break
                         case 47:
-                          switch ((h = s.charCodeAt(I + 1))) {
+                          switch ((h = s.charCodeAt(D + 1))) {
                             case 42:
                             case 47:
                               e: {
-                                for (D = I + 1; D < F; ++D)
-                                  switch (s.charCodeAt(D)) {
+                                for (I = D + 1; I < H; ++I)
+                                  switch (s.charCodeAt(I)) {
                                     case 47:
                                       if (
                                         42 === h &&
-                                        42 === s.charCodeAt(D - 1) &&
-                                        I + 2 !== D
+                                        42 === s.charCodeAt(I - 1) &&
+                                        D + 2 !== I
                                       ) {
-                                        I = D + 1
+                                        D = I + 1
                                         break e
                                       }
                                       break
                                     case 10:
                                       if (47 === h) {
-                                        I = D + 1
+                                        D = I + 1
                                         break e
                                       }
                                   }
-                                I = D
+                                D = I
                               }
                           }
                           break
@@ -584,21 +584,21 @@ module.exports = (function(e) {
                           h++
                         case 34:
                         case 39:
-                          for (; I++ < F && s.charCodeAt(I) !== h; );
+                          for (; D++ < H && s.charCodeAt(D) !== h; );
                       }
                       if (0 === v) break
-                      I++
+                      D++
                     }
                     switch (
-                      ((v = s.substring(U, I)),
+                      ((v = s.substring(U, D)),
                       0 === p &&
-                        (p = (H = H.replace(l, '').trim()).charCodeAt(0)),
+                        (p = (F = F.replace(l, '').trim()).charCodeAt(0)),
                       p)
                     ) {
                       case 64:
                         switch (
-                          (0 < L && (H = H.replace(c, '')),
-                          (h = H.charCodeAt(1)))
+                          (0 < L && (F = F.replace(c, '')),
+                          (h = F.charCodeAt(1)))
                         ) {
                           case 100:
                           case 109:
@@ -615,16 +615,16 @@ module.exports = (function(e) {
                             ((k = i(
                               3,
                               v,
-                              (L = t(M, H, W)),
+                              (L = t(M, F, W)),
                               u,
-                              P,
                               j,
+                              P,
                               U,
                               h,
                               d,
                               f
                             )),
-                            (H = L.join('')),
+                            (F = L.join('')),
                             void 0 !== k &&
                               0 === (U = (v = k.trim()).length) &&
                               ((h = 0), (v = ''))),
@@ -632,65 +632,65 @@ module.exports = (function(e) {
                         )
                           switch (h) {
                             case 115:
-                              H = H.replace(x, a)
+                              F = F.replace(x, a)
                             case 100:
                             case 109:
                             case 45:
-                              v = H + '{' + v + '}'
+                              v = F + '{' + v + '}'
                               break
                             case 107:
                               ;(v =
-                                (H = H.replace(y, '$1 $2')) + '{' + v + '}'),
+                                (F = F.replace(y, '$1 $2')) + '{' + v + '}'),
                                 (v =
                                   1 === E || (2 === E && o('@' + v, 3))
                                     ? '@-webkit-' + v + '@' + v
                                     : '@' + v)
                               break
                             default:
-                              ;(v = H + v), 112 === f && ((V += v), (v = ''))
+                              ;(v = F + v), 112 === f && ((G += v), (v = ''))
                           }
                         else v = ''
                         break
                       default:
-                        v = e(u, t(u, H, W), v, f, d + 1)
+                        v = e(u, t(u, F, W), v, f, d + 1)
                     }
-                    ;(G += v),
-                      (v = W = L = D = p = 0),
-                      (H = ''),
-                      (h = s.charCodeAt(++I))
+                    ;(V += v),
+                      (v = W = L = I = p = 0),
+                      (F = ''),
+                      (h = s.charCodeAt(++D))
                     break
                   case 125:
                   case 59:
                     if (
                       1 <
-                      (U = (H = (0 < L ? H.replace(c, '') : H).trim()).length)
+                      (U = (F = (0 < L ? F.replace(c, '') : F).trim()).length)
                     )
                       switch (
-                        (0 === D &&
-                          ((p = H.charCodeAt(0)),
+                        (0 === I &&
+                          ((p = F.charCodeAt(0)),
                           45 === p || (96 < p && 123 > p)) &&
-                          (U = (H = H.replace(' ', ':')).length),
+                          (U = (F = F.replace(' ', ':')).length),
                         0 < A &&
                           void 0 !==
-                            (k = i(1, H, u, n, P, j, V.length, f, d, f)) &&
-                          0 === (U = (H = k.trim()).length) &&
-                          (H = '\0\0'),
-                        (p = H.charCodeAt(0)),
-                        (h = H.charCodeAt(1)),
+                            (k = i(1, F, u, n, j, P, G.length, f, d, f)) &&
+                          0 === (U = (F = k.trim()).length) &&
+                          (F = '\0\0'),
+                        (p = F.charCodeAt(0)),
+                        (h = F.charCodeAt(1)),
                         p)
                       ) {
                         case 0:
                           break
                         case 64:
                           if (105 === h || 99 === h) {
-                            q += H + s.charAt(I)
+                            q += F + s.charAt(D)
                             break
                           }
                         default:
-                          58 !== H.charCodeAt(U - 1) &&
-                            (V += r(H, p, h, H.charCodeAt(2)))
+                          58 !== F.charCodeAt(U - 1) &&
+                            (G += r(F, p, h, F.charCodeAt(2)))
                       }
-                    ;(W = L = D = p = 0), (H = ''), (h = s.charCodeAt(++I))
+                    ;(W = L = I = p = 0), (F = ''), (h = s.charCodeAt(++D))
                 }
               }
               switch (h) {
@@ -700,23 +700,23 @@ module.exports = (function(e) {
                     ? (_ = 0)
                     : 0 === 1 + p &&
                       107 !== f &&
-                      0 < H.length &&
-                      ((L = 1), (H += '\0')),
-                    0 < A * N && i(0, H, u, n, P, j, V.length, f, d, f),
-                    (j = 1),
-                    P++
+                      0 < F.length &&
+                      ((L = 1), (F += '\0')),
+                    0 < A * N && i(0, F, u, n, j, P, G.length, f, d, f),
+                    (P = 1),
+                    j++
                   break
                 case 59:
                 case 125:
-                  if (0 === _ + S + w + O) {
-                    j++
+                  if (0 === _ + w + S + O) {
+                    P++
                     break
                   }
                 default:
-                  switch ((j++, (g = s.charAt(I)), h)) {
+                  switch ((P++, (g = s.charAt(D)), h)) {
                     case 9:
                     case 32:
-                      if (0 === S + O + _)
+                      if (0 === w + O + _)
                         switch (T) {
                           case 44:
                           case 58:
@@ -738,38 +738,38 @@ module.exports = (function(e) {
                       g = '\\v'
                       break
                     case 38:
-                      0 === S + _ + O && ((L = W = 1), (g = '\f' + g))
+                      0 === w + _ + O && ((L = W = 1), (g = '\f' + g))
                       break
                     case 108:
-                      if (0 === S + _ + O + C && 0 < D)
-                        switch (I - D) {
+                      if (0 === w + _ + O + C && 0 < I)
+                        switch (D - I) {
                           case 2:
-                            112 === T && 58 === s.charCodeAt(I - 3) && (C = T)
+                            112 === T && 58 === s.charCodeAt(D - 3) && (C = T)
                           case 8:
                             111 === R && (C = R)
                         }
                       break
                     case 58:
-                      0 === S + _ + O && (D = I)
+                      0 === w + _ + O && (I = D)
                       break
                     case 44:
-                      0 === _ + w + S + O && ((L = 1), (g += '\r'))
+                      0 === _ + S + w + O && ((L = 1), (g += '\r'))
                       break
                     case 34:
                     case 39:
-                      0 === _ && (S = S === h ? 0 : 0 === S ? h : S)
+                      0 === _ && (w = w === h ? 0 : 0 === w ? h : w)
                       break
                     case 91:
-                      0 === S + _ + w && O++
+                      0 === w + _ + S && O++
                       break
                     case 93:
-                      0 === S + _ + w && O--
+                      0 === w + _ + S && O--
                       break
                     case 41:
-                      0 === S + _ + O && w--
+                      0 === w + _ + O && S--
                       break
                     case 40:
-                      if (0 === S + _ + O) {
+                      if (0 === w + _ + O) {
                         if (0 === p)
                           switch (2 * T + 3 * R) {
                             case 533:
@@ -777,70 +777,70 @@ module.exports = (function(e) {
                             default:
                               p = 1
                           }
-                        w++
+                        S++
                       }
                       break
                     case 64:
-                      0 === _ + w + S + O + D + v && (v = 1)
+                      0 === _ + S + w + O + I + v && (v = 1)
                       break
                     case 42:
                     case 47:
-                      if (!(0 < S + O + w))
+                      if (!(0 < w + O + S))
                         switch (_) {
                           case 0:
-                            switch (2 * h + 3 * s.charCodeAt(I + 1)) {
+                            switch (2 * h + 3 * s.charCodeAt(D + 1)) {
                               case 235:
                                 _ = 47
                                 break
                               case 220:
-                                ;(U = I), (_ = 42)
+                                ;(U = D), (_ = 42)
                             }
                             break
                           case 42:
                             47 === h &&
                               42 === T &&
-                              U + 2 !== I &&
+                              U + 2 !== D &&
                               (33 === s.charCodeAt(U + 2) &&
-                                (V += s.substring(U, I + 1)),
+                                (G += s.substring(U, D + 1)),
                               (g = ''),
                               (_ = 0))
                         }
                   }
-                  0 === _ && (H += g)
+                  0 === _ && (F += g)
               }
-              ;(R = T), (T = h), I++
+              ;(R = T), (T = h), D++
             }
-            if (0 < (U = V.length)) {
+            if (0 < (U = G.length)) {
               if (
                 ((L = u),
                 0 < A &&
-                  void 0 !== (k = i(2, V, L, n, P, j, U, f, d, f)) &&
-                  0 === (V = k).length)
+                  void 0 !== (k = i(2, G, L, n, j, P, U, f, d, f)) &&
+                  0 === (G = k).length)
               )
-                return q + V + G
-              if (((V = L.join(',') + '{' + V + '}'), 0 != E * C)) {
-                switch ((2 !== E || o(V, 2) || (C = 0), C)) {
+                return q + G + V
+              if (((G = L.join(',') + '{' + G + '}'), 0 != E * C)) {
+                switch ((2 !== E || o(G, 2) || (C = 0), C)) {
                   case 111:
-                    V = V.replace(m, ':-moz-$1') + V
+                    G = G.replace(m, ':-moz-$1') + G
                     break
                   case 112:
-                    V =
-                      V.replace(b, '::-webkit-input-$1') +
-                      V.replace(b, '::-moz-$1') +
-                      V.replace(b, ':-ms-input-$1') +
-                      V
+                    G =
+                      G.replace(b, '::-webkit-input-$1') +
+                      G.replace(b, '::-moz-$1') +
+                      G.replace(b, ':-ms-input-$1') +
+                      G
                 }
                 C = 0
               }
             }
-            return q + V + G
+            return q + G + V
           })(M, u, n, 0, 0)
           return (
             0 < A &&
-              void 0 !== (s = i(-2, f, u, u, P, j, f.length, 0, 0, 0)) &&
+              void 0 !== (s = i(-2, f, u, u, j, P, f.length, 0, 0, 0)) &&
               (f = s),
             (C = 0),
-            (j = P = 1),
+            (P = j = 1),
             f
           )
         }
@@ -859,10 +859,10 @@ module.exports = (function(e) {
           k = /([\s\S]*?);/g,
           O = /-self|flex-/g,
           _ = /[^]*?(:[rp][el]a[\w-]+)[^]*/,
-          w = /stretch|:\s*\w+\-(?:conte|avail)/,
-          S = /([^-])(image-set\()/,
-          j = 1,
+          S = /stretch|:\s*\w+\-(?:conte|avail)/,
+          w = /([^-])(image-set\()/,
           P = 1,
+          j = 1,
           C = 0,
           E = 1,
           M = [],
@@ -1084,17 +1084,17 @@ module.exports = (function(e) {
             n
           )
         }
-      function w(e, t) {
+      function S(e, t) {
         void 0 === l.inserted[g] && ((n = ''), y(e, t), (l.inserted[g] = n))
       }
-      var S = function() {
+      var w = function() {
         var e = _.apply(this, arguments),
           t = o + '-' + g
         return (
-          void 0 === l.registered[t] && (l.registered[t] = x), w('.' + t, e), t
+          void 0 === l.registered[t] && (l.registered[t] = x), S('.' + t, e), t
         )
       }
-      function j(e, t) {
+      function P(e, t) {
         var n = ''
         return (
           t.split(' ').forEach(function(t) {
@@ -1103,10 +1103,10 @@ module.exports = (function(e) {
           n
         )
       }
-      function P(e, t) {
+      function j(e, t) {
         var n = [],
-          r = j(n, e)
-        return n.length < 2 ? e : r + S(n, t)
+          r = P(n, e)
+        return n.length < 2 ? e : r + w(n, t)
       }
       function C(e) {
         l.inserted[e] = !0
@@ -1131,19 +1131,19 @@ module.exports = (function(e) {
         cx: function() {
           for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++)
             t[n] = arguments[n]
-          return P(d(t))
+          return j(d(t))
         },
-        merge: P,
-        getRegisteredStyles: j,
+        merge: j,
+        getRegisteredStyles: P,
         injectGlobal: function() {
-          w('', _.apply(this, arguments))
+          S('', _.apply(this, arguments))
         },
         keyframes: function() {
           var e = _.apply(this, arguments),
             t = 'animation-' + g
-          return w('', '@keyframes ' + t + '{' + e + '}'), t
+          return S('', '@keyframes ' + t + '{' + e + '}'), t
         },
-        css: S,
+        css: w,
         sheet: h,
         caches: l
       }
@@ -4261,7 +4261,7 @@ module.exports = (function(e) {
         var e = document.querySelector('meta[property="csp-nonce"]')
         return e ? e.getAttribute('content') : null
       }),
-      w = (function() {
+      S = (function() {
         function e(t) {
           !(function(e, t) {
             if (!(e instanceof t))
@@ -4389,7 +4389,7 @@ module.exports = (function(e) {
           e
         )
       })()
-    t.default = w
+    t.default = S
   },
   function(e, t, n) {
     'use strict'
@@ -4896,10 +4896,10 @@ module.exports = (function(e) {
       k = r(n(107)),
       O = r(n(109)),
       _ = r(n(120)),
-      w = r(n(160)),
-      S = r(n(161)),
-      j = (0, y.create)((0, m.default)()),
-      P = (0, _.default)(),
+      S = r(n(160)),
+      w = r(n(161)),
+      P = (0, y.create)((0, m.default)()),
+      j = (0, _.default)(),
       C = -1e11,
       E = new Map()
     t.sheetsManager = E
@@ -4918,17 +4918,17 @@ module.exports = (function(e) {
               k = void 0 === m ? null : m,
               _ = t.name,
               A = (0, f.default)(t, ['withTheme', 'flip', 'name']),
-              R = (0, w.default)(e),
+              R = (0, S.default)(e),
               N = R.themingEnabled || 'string' == typeof _ || y
             ;(C += 1), (R.options.index = C)
-            var D = (function(e) {
+            var I = (function(e) {
               function t(e, n) {
                 var r
                 ;(0, i.default)(this, t),
                   ((r = (0, s.default)(
                     this,
                     (0, l.default)(t).call(this, e, n)
-                  )).jss = n[b.default.jss] || j),
+                  )).jss = n[b.default.jss] || P),
                   (r.sheetsManager = E),
                   (r.unsubscribeId = null)
                 var o = n.muiThemeProviderOptions
@@ -4939,7 +4939,7 @@ module.exports = (function(e) {
                     (r.disableStylesGeneration = o.disableStylesGeneration)),
                   (r.stylesCreatorSaved = R),
                   (r.sheetOptions = (0, a.default)(
-                    { generateClassName: P },
+                    { generateClassName: j },
                     n[b.default.sheetOptions]
                   )),
                   (r.theme = N ? O.default.initial(n) || T : M),
@@ -5096,7 +5096,7 @@ module.exports = (function(e) {
                       var e = this.props,
                         t = (e.classes, e.innerRef),
                         r = (0, f.default)(e, ['classes', 'innerRef']),
-                        o = (0, S.default)({
+                        o = (0, w.default)({
                           theme: this.theme,
                           name: _,
                           props: r
@@ -5118,7 +5118,7 @@ module.exports = (function(e) {
               )
             })(d.default.Component)
             return (
-              (D.contextTypes = (0, a.default)(
+              (I.contextTypes = (0, a.default)(
                 ((r = { muiThemeProviderOptions: p.default.object }),
                 (0, o.default)(r, b.default.jss, p.default.object),
                 (0, o.default)(r, b.default.sheetOptions, p.default.object),
@@ -5126,8 +5126,8 @@ module.exports = (function(e) {
                 r),
                 N ? O.default.contextTypes : {}
               )),
-              (0, h.default)(D, n),
-              D
+              (0, h.default)(I, n),
+              I
             )
           }
         })
@@ -5366,8 +5366,8 @@ module.exports = (function(e) {
         k = e.spacing,
         O = void 0 === k ? {} : k,
         _ = e.typography,
-        w = void 0 === _ ? {} : _,
-        S = (0, a.default)(e, [
+        S = void 0 === _ ? {} : _,
+        w = (0, a.default)(e, [
           'breakpoints',
           'mixins',
           'palette',
@@ -5375,19 +5375,19 @@ module.exports = (function(e) {
           'spacing',
           'typography'
         ]),
-        j = (0, c.default)(g),
-        P = (0, s.default)(n),
+        P = (0, c.default)(g),
+        j = (0, s.default)(n),
         C = (0, o.default)({}, h.default, O)
       return (0, o.default)(
         {
-          breakpoints: P,
+          breakpoints: j,
           direction: 'ltr',
-          mixins: (0, l.default)(P, C, b),
+          mixins: (0, l.default)(j, C, b),
           overrides: {},
-          palette: j,
+          palette: P,
           props: {},
           shadows: x || d.default,
-          typography: (0, f.default)(j, w)
+          typography: (0, f.default)(P, S)
         },
         (0, i.default)(
           {
@@ -5396,7 +5396,7 @@ module.exports = (function(e) {
             transitions: v.default,
             zIndex: y.default
           },
-          S,
+          w,
           { isMergeableObject: u.default }
         )
       )
@@ -6447,10 +6447,10 @@ module.exports = (function(e) {
                 ])),
                 O = l.action,
                 _ = l.className,
-                w = y(l, ['action', 'className']),
-                S = g.key,
-                j = (g.persist, g.variant),
-                P = void 0 === j ? 'default' : j,
+                S = y(l, ['action', 'className']),
+                w = g.key,
+                P = (g.persist, g.variant),
+                j = void 0 === P ? 'default' : P,
                 C = g.action,
                 E = g.ContentProps,
                 M = void 0 === E ? {} : E,
@@ -6461,12 +6461,12 @@ module.exports = (function(e) {
                   'action',
                   'ContentProps'
                 ]),
-                A = b[P],
-                R = r({}, w, M, { action: C || M.action || O || n }),
+                A = b[j],
+                R = r({}, S, M, { action: C || M.action || O || n }),
                 N = T.anchorOrigin || a,
-                D = R.action
+                I = R.action
               return (
-                'function' == typeof D && (D = R.action(S)),
+                'function' == typeof I && (I = R.action(w)),
                 i.default.createElement(
                   c.default,
                   { rootRef: this.ref },
@@ -6487,8 +6487,8 @@ module.exports = (function(e) {
                       {
                         open: g.open,
                         classes: (0, h.getMuiClasses)(t),
-                        onClose: this.handleClose(S),
-                        onExited: this.handleExited(S)
+                        onClose: this.handleClose(w),
+                        onExited: this.handleExited(w)
                       }
                     ),
                     g.children ||
@@ -6498,7 +6498,7 @@ module.exports = (function(e) {
                           {
                             className: (0, u.default)(
                               t.base,
-                              t['variant' + (0, h.capitalise)(P)],
+                              t['variant' + (0, h.capitalise)(j)],
                               !v && A ? t.lessPadding : null,
                               _
                             )
@@ -6512,7 +6512,7 @@ module.exports = (function(e) {
                               v ? null : A,
                               g.message
                             ),
-                            action: D
+                            action: I
                           }
                         )
                       )
@@ -6743,8 +6743,8 @@ module.exports = (function(e) {
           k = e.contrastThreshold,
           O = void 0 === k ? 3 : k,
           _ = e.tonalOffset,
-          w = void 0 === _ ? 0.2 : _,
-          S = (0, a.default)(e, [
+          S = void 0 === _ ? 0.2 : _,
+          w = (0, a.default)(e, [
             'primary',
             'secondary',
             'error',
@@ -6752,14 +6752,14 @@ module.exports = (function(e) {
             'contrastThreshold',
             'tonalOffset'
           ])
-        function j(e) {
+        function P(e) {
           var t =
             (0, d.getContrastRatio)(e, h.text.primary) >= O
               ? h.text.primary
               : p.text.primary
           return t
         }
-        function P(e) {
+        function j(e) {
           var t =
               arguments.length > 1 && void 0 !== arguments[1]
                 ? arguments[1]
@@ -6774,13 +6774,13 @@ module.exports = (function(e) {
                 : 700
           return (
             !e.main && e[t] && (e.main = e[t]),
-            v(e, 'light', n, w),
-            v(e, 'dark', r, w),
-            e.contrastText || (e.contrastText = j(e.main)),
+            v(e, 'light', n, S),
+            v(e, 'dark', r, S),
+            e.contrastText || (e.contrastText = P(e.main)),
             e
           )
         }
-        P(n), P(y, 'A400', 'A200', 'A700'), P(m)
+        j(n), j(y, 'A400', 'A200', 'A700'), j(m)
         var C = { dark: h, light: p }
         return (0, i.default)(
           (0, o.default)(
@@ -6792,13 +6792,13 @@ module.exports = (function(e) {
               error: m,
               grey: l.default,
               contrastThreshold: O,
-              getContrastText: j,
-              augmentColor: P,
-              tonalOffset: w
+              getContrastText: P,
+              augmentColor: j,
+              tonalOffset: S
             },
             C[x]
           ),
-          S,
+          w,
           { clone: !1 }
         )
       }),
@@ -6973,8 +6973,8 @@ module.exports = (function(e) {
             void 0 === O
               ? Boolean(u.ponyfillGlobal.__MUI_USE_NEXT_TYPOGRAPHY_VARIANTS__)
               : O,
-          w = (n.suppressWarning, n.allVariants),
-          S = (0, a.default)(n, [
+          S = (n.suppressWarning, n.allVariants),
+          w = (0, a.default)(n, [
             'fontFamily',
             'fontSize',
             'fontWeightLight',
@@ -6985,9 +6985,9 @@ module.exports = (function(e) {
             'suppressWarning',
             'allVariants'
           ])
-        var j = p / 14,
-          P = function(e) {
-            return ''.concat((e / k) * j, 'rem')
+        var P = p / 14,
+          j = function(e) {
+            return ''.concat((e / k) * P, 'rem')
           },
           C = function(t, n, r, a, i) {
             return (0, o.default)(
@@ -6995,12 +6995,12 @@ module.exports = (function(e) {
                 color: e.text.primary,
                 fontFamily: f,
                 fontWeight: t,
-                fontSize: P(n),
+                fontSize: j(n),
                 lineHeight: r
               },
               f === c ? { letterSpacing: ''.concat(s(a / n), 'em') } : {},
               i,
-              w
+              S
             )
           },
           E = {
@@ -7021,7 +7021,7 @@ module.exports = (function(e) {
           M = {
             display4: (0, o.default)(
               {
-                fontSize: P(112),
+                fontSize: j(112),
                 fontWeight: v,
                 fontFamily: f,
                 letterSpacing: '-.04em',
@@ -7029,11 +7029,11 @@ module.exports = (function(e) {
                 marginLeft: '-.04em',
                 color: e.text.secondary
               },
-              w
+              S
             ),
             display3: (0, o.default)(
               {
-                fontSize: P(56),
+                fontSize: j(56),
                 fontWeight: b,
                 fontFamily: f,
                 letterSpacing: '-.02em',
@@ -7041,104 +7041,104 @@ module.exports = (function(e) {
                 marginLeft: '-.02em',
                 color: e.text.secondary
               },
-              w
+              S
             ),
             display2: (0, o.default)(
               {
-                fontSize: P(45),
+                fontSize: j(45),
                 fontWeight: b,
                 fontFamily: f,
                 lineHeight: ''.concat(s(51 / 45), 'em'),
                 marginLeft: '-.02em',
                 color: e.text.secondary
               },
-              w
+              S
             ),
             display1: (0, o.default)(
               {
-                fontSize: P(34),
+                fontSize: j(34),
                 fontWeight: b,
                 fontFamily: f,
                 lineHeight: ''.concat(s(41 / 34), 'em'),
                 color: e.text.secondary
               },
-              w
+              S
             ),
             headline: (0, o.default)(
               {
-                fontSize: P(24),
+                fontSize: j(24),
                 fontWeight: b,
                 fontFamily: f,
                 lineHeight: ''.concat(s(32.5 / 24), 'em'),
                 color: e.text.primary
               },
-              w
+              S
             ),
             title: (0, o.default)(
               {
-                fontSize: P(21),
+                fontSize: j(21),
                 fontWeight: g,
                 fontFamily: f,
                 lineHeight: ''.concat(s(24.5 / 21), 'em'),
                 color: e.text.primary
               },
-              w
+              S
             ),
             subheading: (0, o.default)(
               {
-                fontSize: P(16),
+                fontSize: j(16),
                 fontWeight: b,
                 fontFamily: f,
                 lineHeight: ''.concat(s(1.5), 'em'),
                 color: e.text.primary
               },
-              w
+              S
             ),
             body2: (0, o.default)(
               {
-                fontSize: P(14),
+                fontSize: j(14),
                 fontWeight: g,
                 fontFamily: f,
                 lineHeight: ''.concat(s(24 / 14), 'em'),
                 color: e.text.primary
               },
-              w
+              S
             ),
             body1: (0, o.default)(
               {
-                fontSize: P(14),
+                fontSize: j(14),
                 fontWeight: b,
                 fontFamily: f,
                 lineHeight: ''.concat(s(20.5 / 14), 'em'),
                 color: e.text.primary
               },
-              w
+              S
             ),
             caption: (0, o.default)(
               {
-                fontSize: P(12),
+                fontSize: j(12),
                 fontWeight: b,
                 fontFamily: f,
                 lineHeight: ''.concat(s(1.375), 'em'),
                 color: e.text.secondary
               },
-              w
+              S
             ),
             button: (0, o.default)(
               {
-                fontSize: P(14),
+                fontSize: j(14),
                 textTransform: 'uppercase',
                 fontWeight: g,
                 fontFamily: f,
                 color: e.text.primary
               },
-              w
+              S
             )
           }
         return (0, i.default)(
           (0, o.default)(
             {
-              pxToRem: P,
+              pxToRem: j,
               round: s,
               fontFamily: f,
               fontSize: p,
@@ -7158,7 +7158,7 @@ module.exports = (function(e) {
               : {},
             { useNextVariants: _ }
           ),
-          S,
+          w,
           { clone: !1 }
         )
       })
@@ -7823,10 +7823,10 @@ module.exports = (function(e) {
                   k = e.onEntered,
                   O = e.onEntering,
                   _ = e.onExit,
-                  w = e.onExited,
-                  S = e.onExiting,
-                  j = (e.onMouseEnter, e.onMouseLeave, e.open),
-                  P = (e.resumeHideDuration, e.TransitionComponent),
+                  S = e.onExited,
+                  w = e.onExiting,
+                  P = (e.onMouseEnter, e.onMouseLeave, e.open),
+                  j = (e.resumeHideDuration, e.TransitionComponent),
                   C = e.transitionDuration,
                   E = e.TransitionProps,
                   M = (0, o.default)(e, [
@@ -7855,7 +7855,7 @@ module.exports = (function(e) {
                     'transitionDuration',
                     'TransitionProps'
                   ])
-                return !j && this.state.exited
+                return !P && this.state.exited
                   ? null
                   : d.default.createElement(
                       b.default,
@@ -7884,20 +7884,20 @@ module.exports = (function(e) {
                           onBlur: v ? void 0 : this.handlePause
                         }),
                         d.default.createElement(
-                          P,
+                          j,
                           (0, f.default)(
                             {
                               appear: !0,
-                              in: j,
+                              in: P,
                               onEnter: g,
                               onEntered: k,
                               onEntering: O,
                               onExit: _,
                               onExited: (0, m.createChainedFunction)(
                                 this.handleExited,
-                                w
+                                S
                               ),
-                              onExiting: S,
+                              onExiting: w,
                               timeout: C,
                               direction: 'top' === r ? 'down' : 'up'
                             },
@@ -8574,7 +8574,7 @@ module.exports = (function(e) {
             r
           )
         })(x, k),
-        w = (0, s.default)(
+        S = (0, s.default)(
           r.root,
           ((t = {}),
           (0, a.default)(t, r[_], 'inherit' !== _),
@@ -8595,8 +8595,8 @@ module.exports = (function(e) {
           t),
           l
         ),
-        S = h || (g ? 'p' : y[_] || p[_]) || 'span'
-      return u.default.createElement(S, (0, o.default)({ className: w }, O))
+        w = h || (g ? 'p' : y[_] || p[_]) || 'span'
+      return u.default.createElement(w, (0, o.default)({ className: S }, O))
     }
     h.defaultProps = {
       align: 'inherit',
@@ -8969,371 +8969,109 @@ module.exports = (function(e) {
   ,
   ,
   ,
-  ,
-  ,
-  ,
   function(e, t, n) {
     'use strict'
-    n.r(t)
-    var r = {}
-    n.r(r),
-      n.d(r, 'alert', function() {
-        return a
-      }),
-      n.d(r, 'collapseTabs', function() {
-        return i
-      }),
-      n.d(r, 'colorChoice', function() {
-        return u
-      }),
-      n.d(r, 'snackbar', function() {
-        return s
-      }),
-      n.d(r, 'amountField', function() {
+    n.r(t),
+      n.d(t, 'Snackbar', function() {
         return l
-      }),
-      n.d(r, 'typography', function() {
-        return f
-      }),
-      n.d(r, 'grid', function() {
-        return d
-      }),
-      n.d(r, 'button', function() {
-        return p
-      }),
-      n.d(r, 'formItem', function() {
-        return h
-      }),
-      n.d(r, 'formField', function() {
-        return v
-      }),
-      n.d(r, 'input', function() {
-        return y
-      }),
-      n.d(r, 'select', function() {
-        return b
-      }),
-      n.d(r, 'nanoAddress', function() {
-        return m
-      }),
-      n.d(r, 'keyValue', function() {
-        return g
-      }),
-      n.d(r, 'tabs', function() {
-        return x
-      }),
-      n.d(r, 'switchTabs', function() {
-        return k
-      }),
-      n.d(r, 'menu', function() {
-        return O
-      }),
-      n.d(r, 'menuItem', function() {
-        return _
-      }),
-      n.d(r, 'spinner', function() {
-        return w
-      }),
-      n.d(r, 'checkbox', function() {
-        return S
       })
-    var o = n(6),
-      a = function(e) {
-        return {
-          root: Object(o.a)(
-            'display:flex;padding:16px;align-items:center;background:lightblue;',
-            'success' === e.variant && Object(o.a)('background:lightgreen;'),
-            ';',
-            'error' === e.variant && Object(o.a)('background:red;'),
-            ';',
-            'warning' === e.variant && Object(o.a)('background:orange;'),
-            ';'
-          ),
-          icon: Object(o.a)(
-            'flex:0 0 auto;margin-right:16px;color:rgba(255,255,255,0.7);'
-          ),
-          message: Object(o.a)(
-            'flex-grow:1;color:#fff;:last-child{margin-bottom:0;}a{color:#fff;text-decoration:underline;}'
-          )
-        }
-      },
-      i = (n(10),
-      function(e) {
-        return {
-          root: Object(o.a)(),
-          collapsedRoot: Object(o.a)(),
-          collapsedBack: Object(o.a)(),
-          collapsedTab: Object(o.a)(),
-          collapsedList: Object(o.a)(),
-          tabsRoot: Object(o.a)(),
-          tabs: Object(o.a)(),
-          tab: Object(o.a)(),
-          tabPanels: Object(o.a)(),
-          tabPanel: Object(o.a)()
-        }
-      }),
-      u = function(e) {
-        return {
-          root: Object(o.a)('display:flex;'),
-          option: Object(o.a)(
-            'margin:10px;width:30px;height:30px;border-radius:100%;position:relative;',
-            e.options.map(function(e, t) {
-              return Object(
-                o.a
-              )('&:nth-child(', t + 1, '){background:', e, ';}')
-            }),
-            ';'
-          ),
-          label: Object(o.a)(
-            'position:absolute;top:-4px;left:-4px;right:-4px;bottom:-4px;border-radius:100%;cursor:pointer;'
-          ),
-          hiddenLabel: Object(o.a)('display:none;visibility:hidden;'),
-          radioInput: Object(o.a)(
-            'display:none;visibility:hidden;&:checked + label{border:2px solid #555;}'
-          )
-        }
-      },
-      s = function(e) {
-        return { root: Object(o.a)() }
-      },
-      l = function(e) {
-        return {
-          root: Object(o.a)('display:flex;align-items:center;'),
-          content: Object(o.a)('flex-grow:1;'),
-          switchButton: Object(o.a)('margin-left:12px;'),
-          topRow: Object(o.a)('display:flex;align-items:flex-end;'),
-          topVal: Object(o.a)('flex-grow:1;'),
-          input: Object(o.a)('width:100%;'),
-          topLabel: Object(o.a)('margin-left:8px;'),
-          bottomRow: Object(o.a)('display:flex;align-items:flex-end;'),
-          bottomVal: Object(o.a)('flex-grow:1;'),
-          bottomLabel: Object(o.a)('margin-left:8px;')
-        }
-      },
-      c = { sm: 6, md: 12, lg: 24 },
-      f = function(e) {
-        e.el, e.size
-        var t = e.color,
-          n = e.noWrap,
-          r = e.spaceAbove,
-          a = e.spaceBelow,
-          i = Object(o.a)()
-        return (
-          null != t && (i = Object(o.a)(i, ';color:', t, ';')),
-          n &&
-            (i = Object(o.a)(
-              i,
-              ';overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'
-            )),
-          (i = Object(o.a)(i, ';margin-top:0;margin-bottom:0;')),
-          'number' == typeof r &&
-            (i = Object(o.a)(i, ';margin-top:', r * c.md, 'px;')),
-          'number' == typeof a &&
-            (i = Object(o.a)(i, ';margin-bottom:', a * c.md, 'px;')),
-          { root: i }
-        )
-      },
-      d = function(e) {
-        return {
-          root: Object(o.a)(
-            'display:grid;grid-template-columns:repeat(12,1fr);grid-gap:',
-            e.gutter ? ''.concat(e.gutter, 'px') : ''.concat(c.md, 'px'),
-            ';'
-          ),
-          item: Object(o.a)(
-            'grid-column-end:',
-            e.span ? 'span '.concat(e.span) : 'span 12',
-            ';',
-            e.spanMobile
-              ? Object(o.a)(
-                  '@media (min-width:480px){grid-column-end:span ',
-                  e.spanMobile,
-                  ';}'
-                )
-              : null,
-            ' ',
-            e.spanSm
-              ? Object(o.a)(
-                  '@media (min-width:640px){grid-column-end:span ',
-                  e.spanSm,
-                  ';}'
-                )
-              : null,
-            ' ',
-            e.spanTablet
-              ? Object(o.a)(
-                  '@media (min-width:768px){grid-column-end:span ',
-                  e.spanTablet,
-                  ';}'
-                )
-              : null,
-            ' ',
-            e.spanDesktop
-              ? Object(o.a)(
-                  '@media (min-width:1020px){grid-column-end:span ',
-                  e.spanDesktop,
-                  ';}'
-                )
-              : null,
-            ' ',
-            e.spanLg
-              ? Object(o.a)(
-                  '@media (min-width:1280px){grid-column-end:span ',
-                  e.spanLg,
-                  ';}'
-                )
-              : null
-          )
-        }
-      },
-      p = function(e) {
-        return {
-          root: Object(o.a)(
-            'background:',
-            e.color ? e.color : '#eee',
-            ';display:inline-block;padding:0.75em 1.25em;font-size:16px;position:relative;',
-            'primary' === e.type && Object(o.a)('background:blue;color:#fff;'),
-            ';',
-            !0 === e.block &&
-              Object(o.a)('display:block;text-align:center;width:100%;'),
-            ';&:disabled{cursor:default;opacity:0.8;transition:opacity 0.2s linear;',
-            e.loading &&
-              Object(o.a)('> span:first-child{opacity:0;visibility:hidden;}'),
-            ';}'
-          ),
-          children: Object(o.a)(),
-          spinnerWrap: Object(o.a)(
-            'line-height:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);'
-          ),
-          spinner: Object(o.a)()
-        }
-      },
-      h = function(e) {
-        return {
-          root: Object(o.a)('display:flex;flex-wrap:wrap;'),
-          label: Object(o.a)('flex-grow:1;'),
-          extra: Object(o.a)('flex:0 0 auto;'),
-          field: Object(o.a)('flex:0 0 100%;'),
-          description: Object(o.a)('flex:0 1 100%;')
-        }
-      },
-      v = function(e) {
-        return {
-          root: Object(o.a)(
-            'display:flex;align-items:center;background:#fff;border:1px solid #ddd;padding:0.25em 0.5em;'
-          ),
-          adornStart: Object(o.a)('margin-right:0.66em;'),
-          adornEnd: Object(o.a)('margin-left:0.66em;')
-        }
-      },
-      y = function(e) {
-        return {
-          root: Object(o.a)(
-            'border:1px solid #eee;',
-            !!e.multiline && Object(o.a)('height:', 32 * (e.rows || 3), 'px;'),
-            ';'
-          )
-        }
-      },
-      b = function(e) {
-        return {
-          root: Object(o.a)(
-            "appearance:none;border:1px solid #eee;background:transparent;padding-right:2em;background-image:url('data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%230%22%20fill-rule%3D%22evenodd%22%20opacity%3D%220.54%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 0.6em bottom 49%;&::-ms-expand{display:none;}"
-          )
-        }
-      },
-      m = function(e) {
-        return {
-          root: Object(o.a)('display:flex;flex-wrap:wrap;'),
-          address: Object(o.a)('flex-grow:1;')
-        }
-      },
-      g = function(e) {
-        return {
-          root: Object(o.a)(
-            'display:block;list-style:none;margin:0;padding:0;'
-          ),
-          key: Object(o.a)('display:block;margin:0;'),
-          value: Object(o.a)('display:block;margin:0;')
-        }
-      },
-      x = function(e) {
-        switch (e.variant) {
-          case 'switch':
-            return {
-              tabs: Object(o.a)(
-                ".react-tabs__tab-list{list-style:none;display:inline-flex;position:relative;&:before{background:black;content:'';position:absolute;top:0;bottom:0;left:",
-                e.activeTabLeft,
-                'px;width:',
-                e.activeTabWidth,
-                'px;}}.react-tabs__tab{position:relative;cursor:pointer;&--selected{color:#fff;}}.react-tabs__tab-panel{}'
-              )
+    var r = n(0),
+      o = n(10),
+      a = n(6),
+      i = n(129)
+    function u(e, t, n) {
+      return (
+        t in e
+          ? Object.defineProperty(e, t, {
+              value: n,
+              enumerable: !0,
+              configurable: !0,
+              writable: !0
+            })
+          : (e[t] = n),
+        e
+      )
+    }
+    function s(e, t) {
+      if (null == e) return {}
+      var n,
+        r,
+        o = (function(e, t) {
+          if (null == e) return {}
+          var n,
+            r,
+            o = {},
+            a = Object.keys(e)
+          for (r = 0; r < a.length; r++)
+            (n = a[r]), t.indexOf(n) >= 0 || (o[n] = e[n])
+          return o
+        })(e, t)
+      if (Object.getOwnPropertySymbols) {
+        var a = Object.getOwnPropertySymbols(e)
+        for (r = 0; r < a.length; r++)
+          (n = a[r]),
+            t.indexOf(n) >= 0 ||
+              (Object.prototype.propertyIsEnumerable.call(e, n) &&
+                (o[n] = e[n]))
+      }
+      return o
+    }
+    var l = function(e) {
+      var t = e.styles,
+        n = (e.destyleMerge, e.children),
+        o = e.successIcon,
+        l = e.errorIcon,
+        c = e.infoIcon,
+        f = e.warningIcon,
+        d = e.notistackProps,
+        p = (s(e, [
+          'styles',
+          'destyleMerge',
+          'children',
+          'successIcon',
+          'errorIcon',
+          'infoIcon',
+          'warningIcon',
+          'notistackProps'
+        ]),
+        (function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n)
+            'function' == typeof Object.getOwnPropertySymbols &&
+              (r = r.concat(
+                Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                })
+              )),
+              r.forEach(function(t) {
+                u(e, t, n[t])
+              })
+          }
+          return e
+        })(
+          {},
+          {
+            maxSnack: 3,
+            anchorOrigin: { vertical: 'bottom', horizontal: 'right' },
+            classes: {
+              root: Object(a.b)(t.root),
+              variantSuccess: Object(a.b)(t.success),
+              variantError: Object(a.b)(t.error),
+              variantWarning: Object(a.b)(t.warning),
+              variantInfo: Object(a.b)(t.info)
+            },
+            iconVariant: {
+              success: r.createElement('div', { className: t.iconSuccess }, o),
+              error: r.createElement('div', { className: t.iconError }, l),
+              warning: r.createElement('div', { className: t.iconWarning }, f),
+              info: r.createElement('div', { className: t.iconInfo }, c)
             }
-          default:
-            return {
-              tabs: Object(o.a)(
-                '.react-tabs__tab-list{}.react-tabs__tab{}.react-tabs__tab-panel{}'
-              ),
-              tabDisabled: Object(o.a)(),
-              tabSelected: Object(o.a)(),
-              tabPanelSelected: Object(o.a)()
-            }
-        }
-      },
-      k = function(e) {
-        var t = e.activeTabLeft,
-          n = e.activeTabWidth
-        return {
-          tabs: Object(o.a)(
-            "text-align:center;.react-tabs__tab-list{list-style:none;display:inline-flex;position:relative;&:before{background:black;content:'';position:absolute;top:0;bottom:0;left:",
-            t,
-            'px;width:',
-            n,
-            'px;}}.react-tabs__tab{position:relative;cursor:pointer;&--selected{color:#fff;}}.react-tabs__tab-panel{}'
-          )
-        }
-      },
-      O = function(e) {
-        return { root: Object(o.a)() }
-      },
-      _ = function(e) {
-        return { root: Object(o.a)(), selected: Object(o.a)() }
-      },
-      w = function(e) {
-        return { root: Object(o.a)('color:', e.color, ';') }
-      },
-      S = function(e) {
-        var t = e.size || 24
-        return {
-          root: Object(o.a)('display:flex;'),
-          checkbox: Object(o.a)('display:none;'),
-          faux: Object(o.a)(
-            'position:relative;width:',
-            t,
-            'px;height:',
-            t,
-            'px;background:',
-            e.checked ? 'green' : 'gray',
-            ';'
-          ),
-          check: Object(o.a)(
-            'display:',
-            e.checked ? 'block' : 'none',
-            ';position:absolute;right:50%;bottom:25%;height:',
-            0.75 * t,
-            'px;width:',
-            0.33 * t,
-            'px;border-bottom:3px solid #fff;border-right:3px solid #fff;transform:rotate(45deg);transform-origin:bottom right;'
-          ),
-          label: Object(o.a)()
-        }
-      },
-      j = n(129)
-    n.d(t, 'styles', function() {
-      return r
-    }),
-      n.d(t, 'withSnackbar', function() {
-        return j.withSnackbar
-      })
+          },
+          d
+        ))
+      return r.createElement(i.SnackbarProvider, p, n)
+    }
+    t.default = Object(o.destyle)(l, 'BB-Snackbar')
   }
 ])

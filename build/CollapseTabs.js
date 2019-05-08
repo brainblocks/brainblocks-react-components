@@ -51,24 +51,21 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (n.p = ''),
-    n((n.s = 207))
+    n((n.s = 157))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  10: function(e, t) {
-    e.exports = require('destyle')
-  },
-  207: function(e, t, n) {
+  157: function(e, t, n) {
     'use strict'
     n.r(t),
       n.d(t, 'CollapseTabs', function() {
         return p
       })
     var r = n(0),
-      a = n(10),
-      o = n(96)
+      a = n(8),
+      o = n(87)
     function s() {
       return (s =
         Object.assign ||
@@ -215,12 +212,12 @@ module.exports = (function(e) {
       }
     t.default = Object(a.destyle)(p, 'BB-CollapseTabs')
   },
-  3: function(e, t, n) {
-    e.exports = n(50)()
+  4: function(e, t, n) {
+    e.exports = n(51)()
   },
-  50: function(e, t, n) {
+  51: function(e, t, n) {
     'use strict'
-    var r = n(51)
+    var r = n(52)
     function a() {}
     function o() {}
     ;(o.resetWarningCache = a),
@@ -262,11 +259,11 @@ module.exports = (function(e) {
         return (n.PropTypes = n), n
       })
   },
-  51: function(e, t, n) {
+  52: function(e, t, n) {
     'use strict'
     e.exports = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED'
   },
-  8: function(e, t, n) {
+  7: function(e, t, n) {
     var r
     /*!
   Copyright (c) 2017 Jed Watson.
@@ -304,13 +301,16 @@ module.exports = (function(e) {
             }.apply(t, [])) || (e.exports = r)
     })()
   },
-  96: function(e, t, n) {
+  8: function(e, t) {
+    e.exports = require('destyle')
+  },
+  87: function(e, t, n) {
     'use strict'
     n.r(t)
     var r = n(0),
       a = n.n(r),
-      o = n(10)
-    n(3)
+      o = n(8)
+    n(4)
     function s(e) {
       return e.type && 'Tab' === e.type.tabsRole
     }
@@ -376,7 +376,7 @@ module.exports = (function(e) {
       })
     }
     var p,
-      f = n(8),
+      f = n(7),
       b = n.n(f),
       h = 0
     function y() {

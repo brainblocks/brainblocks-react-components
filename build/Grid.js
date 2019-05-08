@@ -51,23 +51,20 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, r)
     }),
     (t.p = ''),
-    t((t.s = 211))
+    t((t.s = 161))
   )
 })({
   0: function(e, r) {
     e.exports = require('react')
   },
-  10: function(e, r) {
-    e.exports = require('destyle')
-  },
-  211: function(e, r, t) {
+  161: function(e, r, t) {
     'use strict'
     t.r(r),
       t.d(r, 'Grid', function() {
         return i
       })
     var n = t(0),
-      o = t(10)
+      o = t(8)
     function u() {
       return (u =
         Object.assign ||
@@ -112,5 +109,8 @@ module.exports = (function(e) {
       return n.createElement('div', u({ className: r.root }, o), t)
     }
     r.default = Object(o.destyle)(i, 'BB-Grid')
+  },
+  8: function(e, r) {
+    e.exports = require('destyle')
   }
 })

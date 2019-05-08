@@ -2,7 +2,12 @@
 import * as React from 'react'
 import { destyle } from 'destyle'
 import { cx } from 'emotion'
-import { SnackbarProvider } from 'notistack'
+import {
+  SnackbarProvider,
+  withSnackbar as notistackWithSnackbar
+} from 'notistack'
+
+export const withSnackbar = notistackWithSnackbar
 
 type Props = {
   successIcon: React.Node,

@@ -1,13 +1,14 @@
 {
   "name": "brainblocks-components",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "flow": "flow",
     "start": "npx styleguidist server",
-    "build": "npx webpack --config webpack.build.config.js"
+    "build": "npx webpack --config webpack.build.config.js",
+    "analyse": "webpack-bundle-analyzer stats.json"
   },
   "author": "BrainBlocks",
   "license": "ISC",
@@ -42,11 +43,8 @@
     "react-styleguidist": "^8.0.6",
     "react-tabs": "^3.0.0",
     "webpack": "^4.30.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.1"
   },
-  "sideEffects": [
-    "./src/destyleConfig.js",
-    "./src/styles.js",
-    "./src/components/**/*.style.js"
-  ]
+  "sideEffects": false
 }

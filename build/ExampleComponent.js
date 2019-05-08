@@ -51,23 +51,20 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (r.p = ''),
-    r((r.s = 209))
+    r((r.s = 159))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  10: function(e, t) {
-    e.exports = require('destyle')
-  },
-  209: function(e, t, r) {
+  159: function(e, t, r) {
     'use strict'
     r.r(t),
       r.d(t, 'ExampleComponent', function() {
         return i
       })
     var n = r(0),
-      o = r(10)
+      o = r(8)
     function u() {
       return (u =
         Object.assign ||
@@ -117,5 +114,8 @@ module.exports = (function(e) {
       )
     }
     t.default = Object(o.destyle)(i, 'BB-Example')
+  },
+  8: function(e, t) {
+    e.exports = require('destyle')
   }
 })

@@ -51,16 +51,16 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (r.p = ''),
-    r((r.s = 157))
+    r((r.s = 133))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  157: function(e, t, r) {
+  133: function(e, t, r) {
     'use strict'
     r.r(t),
-      r.d(t, 'Checkbox', function() {
+      r.d(t, 'DefTableItem', function() {
         return a
       })
     var n = r(0),
@@ -102,27 +102,19 @@ module.exports = (function(e) {
       return o
     }
     var a = function(e) {
-      var t = e.styles,
-        r = e.label,
-        o = (e.size,
-        e.destyleMerge,
-        u(e, ['styles', 'label', 'size', 'destyleMerge']))
+      var t = e.label,
+        r = e.children,
+        o = e.styles,
+        a = (e.destyleMerge,
+        u(e, ['label', 'children', 'styles', 'destyleMerge']))
       return n.createElement(
-        'label',
-        { className: t.root },
-        n.createElement(
-          'input',
-          l({ type: 'checkbox', className: t.checkbox }, o)
-        ),
-        n.createElement(
-          'span',
-          { className: t.faux },
-          n.createElement('span', { className: t.check })
-        ),
-        n.createElement('span', { className: t.label }, r)
+        'div',
+        l({ className: o.item }, a),
+        n.createElement('dt', { className: o.dt }, t),
+        n.createElement('dd', { className: o.dd }, r)
       )
     }
-    t.default = Object(o.destyle)(a, 'BB-Checkbox')
+    t.default = Object(o.destyle)(a, 'BB-DefTable')
   },
   8: function(e, t) {
     e.exports = require('destyle')

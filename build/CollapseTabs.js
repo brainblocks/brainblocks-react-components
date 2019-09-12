@@ -51,13 +51,13 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (n.p = ''),
-    n((n.s = 157))
+    n((n.s = 158))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  157: function(e, t, n) {
+  158: function(e, t, n) {
     'use strict'
     n.r(t),
       n.d(t, 'CollapseTabs', function() {

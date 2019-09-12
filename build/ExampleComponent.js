@@ -51,13 +51,13 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (r.p = ''),
-    r((r.s = 159))
+    r((r.s = 161))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  159: function(e, t, r) {
+  161: function(e, t, r) {
     'use strict'
     r.r(t),
       r.d(t, 'ExampleComponent', function() {

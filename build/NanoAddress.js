@@ -51,18 +51,18 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (n.p = ''),
-    n((n.s = 165))
+    n((n.s = 167))
   )
 })({
   0: function(e, t) {
     e.exports = require('react')
   },
-  146: function(e, t, n) {
+  147: function(e, t, n) {
     'use strict'
-    var r = n(166).CopyToClipboard
+    var r = n(168).CopyToClipboard
     ;(r.CopyToClipboard = r), (e.exports = r)
   },
-  147: function(e, t, n) {
+  148: function(e, t, n) {
     'use strict'
     var r,
       o = (r = n(0)) && 'object' == typeof r && 'default' in r ? r.default : r,
@@ -106,7 +106,7 @@ module.exports = (function(e) {
       )
     }
   },
-  165: function(e, t, n) {
+  167: function(e, t, n) {
     'use strict'
     n.r(t),
       n.d(t, 'NanoAddress', function() {
@@ -114,8 +114,8 @@ module.exports = (function(e) {
       })
     var r = n(0),
       o = n.n(r),
-      a = n(146),
-      i = n(147),
+      a = n(147),
+      i = n(148),
       c = n.n(i),
       l = n(8)
     function u(e) {
@@ -305,7 +305,7 @@ module.exports = (function(e) {
     })()
     t.default = Object(l.destyle)(v, 'BB-NanoAddress')
   },
-  166: function(e, t, n) {
+  168: function(e, t, n) {
     'use strict'
     Object.defineProperty(t, '__esModule', { value: !0 }),
       (t.CopyToClipboard = void 0)
@@ -334,7 +334,7 @@ module.exports = (function(e) {
         }
       })(),
       a = c(n(0)),
-      i = c(n(167))
+      i = c(n(169))
     function c(e) {
       return e && e.__esModule ? e : { default: e }
     }
@@ -425,9 +425,9 @@ module.exports = (function(e) {
       )
     })()).defaultProps = { onCopy: void 0, options: void 0 }
   },
-  167: function(e, t, n) {
+  169: function(e, t, n) {
     'use strict'
-    var r = n(168),
+    var r = n(170),
       o = 'Copy to clipboard: #{key}, Enter'
     e.exports = function(e, t) {
       var n,
@@ -486,7 +486,7 @@ module.exports = (function(e) {
       return s
     }
   },
-  168: function(e, t) {
+  170: function(e, t) {
     e.exports = function() {
       var e = document.getSelection()
       if (!e.rangeCount) return function() {}

@@ -51,10 +51,10 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }),
     (r.p = ''),
-    r((r.s = 225))
+    r((r.s = 227))
   )
 })({
-  225: function(e, t, r) {
+  227: function(e, t, r) {
     'use strict'
     r.r(t)
     var a = {}
@@ -77,47 +77,50 @@ module.exports = (function(e) {
       r.d(a, 'typography', function() {
         return d
       }),
-      r.d(a, 'grid', function() {
+      r.d(a, 'defTable', function() {
         return f
       }),
-      r.d(a, 'button', function() {
+      r.d(a, 'grid', function() {
         return b
       }),
-      r.d(a, 'formItem', function() {
+      r.d(a, 'button', function() {
         return p
       }),
-      r.d(a, 'formField', function() {
+      r.d(a, 'formItem', function() {
         return h
       }),
-      r.d(a, 'input', function() {
+      r.d(a, 'formField', function() {
         return g
       }),
-      r.d(a, 'select', function() {
+      r.d(a, 'input', function() {
         return m
       }),
-      r.d(a, 'nanoAddress', function() {
+      r.d(a, 'select', function() {
         return k
+      }),
+      r.d(a, 'nanoAddress', function() {
+        return x
       }),
       r.d(a, 'keyValue', function() {
         return w
       }),
       r.d(a, 'tabs', function() {
-        return x
+        return v
       }),
       r.d(a, 'switchTabs', function() {
-        return v
+        return O
       }),
       r.d(a, 'menu', function() {
         return y
       }),
       r.d(a, 'menuItem', function() {
-        return O
-      }),
-      r.d(a, 'spinner', function() {
         return j
       }),
-      r.d(a, 'checkbox', function() {
+      r.d(a, 'spinner', function() {
         return A
+      }),
+      r.d(a, 'checkbox', function() {
+        return C
       })
     var n = r(5),
       i = function(e) {
@@ -217,6 +220,16 @@ module.exports = (function(e) {
       },
       f = function(e) {
         return {
+          root: Object(n.a)(),
+          item: Object(n.a)(
+            'display:flex;align-items:flex-start;justify-content:space-between;padding:6px 0;border-top:1px solid #eee;&:first-child{border-top:none;}@media (max-width:767px){display:block;}'
+          ),
+          dt: Object(n.a)('margin:2px 16px 2px 0;'),
+          dd: Object(n.a)('margin:2px 0;')
+        }
+      },
+      b = function(e) {
+        return {
           root: Object(n.a)(
             'display:grid;grid-template-columns:repeat(12,1fr);grid-gap:',
             e.gutter ? ''.concat(e.gutter, 'px') : ''.concat(u.md, 'px'),
@@ -268,7 +281,7 @@ module.exports = (function(e) {
           )
         }
       },
-      b = function(e) {
+      p = function(e) {
         return {
           root: Object(n.a)(
             'background:',
@@ -290,7 +303,7 @@ module.exports = (function(e) {
           spinner: Object(n.a)()
         }
       },
-      p = function(e) {
+      h = function(e) {
         return {
           root: Object(n.a)('display:flex;flex-wrap:wrap;'),
           label: Object(n.a)('flex-grow:1;'),
@@ -299,7 +312,7 @@ module.exports = (function(e) {
           description: Object(n.a)('flex:0 1 100%;')
         }
       },
-      h = function(e) {
+      g = function(e) {
         return {
           root: Object(n.a)(
             'display:flex;align-items:center;background:#fff;border:1px solid #ddd;padding:0.25em 0.5em;'
@@ -308,7 +321,7 @@ module.exports = (function(e) {
           adornEnd: Object(n.a)('margin-left:0.66em;')
         }
       },
-      g = function(e) {
+      m = function(e) {
         return {
           root: Object(n.a)(
             'border:1px solid #eee;',
@@ -317,14 +330,14 @@ module.exports = (function(e) {
           )
         }
       },
-      m = function(e) {
+      k = function(e) {
         return {
           root: Object(n.a)(
             "appearance:none;border:1px solid #eee;background:transparent;padding-right:2em;background-image:url('data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%230%22%20fill-rule%3D%22evenodd%22%20opacity%3D%220.54%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 0.6em bottom 49%;&::-ms-expand{display:none;}"
           )
         }
       },
-      k = function(e) {
+      x = function(e) {
         return {
           root: Object(n.a)('display:flex;flex-wrap:wrap;'),
           address: Object(n.a)('flex-grow:1;')
@@ -339,7 +352,7 @@ module.exports = (function(e) {
           value: Object(n.a)('display:block;margin:0;')
         }
       },
-      x = function(e) {
+      v = function(e) {
         switch (e.variant) {
           case 'switch':
             return {
@@ -362,7 +375,7 @@ module.exports = (function(e) {
             }
         }
       },
-      v = function(e) {
+      O = function(e) {
         var t = e.activeTabLeft,
           r = e.activeTabWidth
         return {
@@ -378,13 +391,13 @@ module.exports = (function(e) {
       y = function(e) {
         return { root: Object(n.a)() }
       },
-      O = function(e) {
+      j = function(e) {
         return { root: Object(n.a)(), selected: Object(n.a)() }
       },
-      j = function(e) {
+      A = function(e) {
         return { root: Object(n.a)('color:', e.color, ';') }
       },
-      A = function(e) {
+      C = function(e) {
         var t = e.size || 24
         return {
           root: Object(n.a)('display:flex;'),
@@ -629,13 +642,13 @@ module.exports = (function(e) {
                 s.charCodeAt(0) + s.charCodeAt(t))
               ) {
                 case 226:
-                  s = c.replace(w, 'tb')
+                  s = c.replace(x, 'tb')
                   break
                 case 232:
-                  s = c.replace(w, 'tb-rl')
+                  s = c.replace(x, 'tb-rl')
                   break
                 case 220:
-                  s = c.replace(w, 'lr')
+                  s = c.replace(x, 'lr')
                   break
                 default:
                   return c
@@ -682,14 +695,14 @@ module.exports = (function(e) {
                     )
                   case 115:
                     return (
-                      '-webkit-' + c + '-ms-flex-item-' + c.replace(y, '') + c
+                      '-webkit-' + c + '-ms-flex-item-' + c.replace(O, '') + c
                     )
                   default:
                     return (
                       '-webkit-' +
                       c +
                       '-ms-flex-line-pack' +
-                      c.replace('align-content', '').replace(y, '') +
+                      c.replace('align-content', '').replace(O, '') +
                       c
                     )
                 }
@@ -734,7 +747,7 @@ module.exports = (function(e) {
             a = e.substring(0, 3 !== t ? r : 10)
           return (
             (r = e.substring(r + 1, e.length - 1)),
-            F(2 !== t ? a : a.replace(O, '$1'), r, t)
+            F(2 !== t ? a : a.replace(y, '$1'), r, t)
           )
         }
         function i(e, t) {
@@ -779,10 +792,10 @@ module.exports = (function(e) {
               var b,
                 p,
                 h,
-                w,
+                x,
                 v,
-                y = 0,
                 O = 0,
+                y = 0,
                 j = 0,
                 A = 0,
                 D = 0,
@@ -804,12 +817,12 @@ module.exports = (function(e) {
               if (
                 ((p = s.charCodeAt(I)),
                 I === W &&
-                  0 !== O + A + j + y &&
-                  (0 !== O && (p = 47 === O ? 10 : 47),
-                  (A = j = y = 0),
+                  0 !== y + A + j + O &&
+                  (0 !== y && (p = 47 === y ? 10 : 47),
+                  (A = j = O = 0),
                   L++,
                   W++),
-                0 === O + A + j + y)
+                0 === y + A + j + O)
               ) {
                 if (
                   I === W &&
@@ -922,7 +935,7 @@ module.exports = (function(e) {
                         )
                           switch (p) {
                             case 115:
-                              B = B.replace(x, i)
+                              B = B.replace(w, i)
                             case 100:
                             case 109:
                             case 45:
@@ -986,8 +999,8 @@ module.exports = (function(e) {
               switch (p) {
                 case 13:
                 case 10:
-                  47 === O
-                    ? (O = 0)
+                  47 === y
+                    ? (y = 0)
                     : 0 === 1 + b &&
                       107 !== d &&
                       0 < B.length &&
@@ -998,40 +1011,40 @@ module.exports = (function(e) {
                   break
                 case 59:
                 case 125:
-                  if (0 === O + A + j + y) {
+                  if (0 === y + A + j + O) {
                     C++
                     break
                   }
                 default:
-                  switch ((C++, (w = s.charAt(I)), p)) {
+                  switch ((C++, (x = s.charAt(I)), p)) {
                     case 9:
                     case 32:
-                      if (0 === A + y + O)
+                      if (0 === A + O + y)
                         switch (D) {
                           case 44:
                           case 58:
                           case 9:
                           case 32:
-                            w = ''
+                            x = ''
                             break
                           default:
-                            32 !== p && (w = ' ')
+                            32 !== p && (x = ' ')
                         }
                       break
                     case 0:
-                      w = '\\0'
+                      x = '\\0'
                       break
                     case 12:
-                      w = '\\f'
+                      x = '\\f'
                       break
                     case 11:
-                      w = '\\v'
+                      x = '\\v'
                       break
                     case 38:
-                      0 === A + O + y && ((M = N = 1), (w = '\f' + w))
+                      0 === A + y + O && ((M = N = 1), (x = '\f' + x))
                       break
                     case 108:
-                      if (0 === A + O + y + S && 0 < z)
+                      if (0 === A + y + O + S && 0 < z)
                         switch (I - z) {
                           case 2:
                             112 === D && 58 === s.charCodeAt(I - 3) && (S = D)
@@ -1040,26 +1053,26 @@ module.exports = (function(e) {
                         }
                       break
                     case 58:
-                      0 === A + O + y && (z = I)
+                      0 === A + y + O && (z = I)
                       break
                     case 44:
-                      0 === O + j + A + y && ((M = 1), (w += '\r'))
+                      0 === y + j + A + O && ((M = 1), (x += '\r'))
                       break
                     case 34:
                     case 39:
-                      0 === O && (A = A === p ? 0 : 0 === A ? p : A)
+                      0 === y && (A = A === p ? 0 : 0 === A ? p : A)
                       break
                     case 91:
-                      0 === A + O + j && y++
+                      0 === A + y + j && O++
                       break
                     case 93:
-                      0 === A + O + j && y--
+                      0 === A + y + j && O--
                       break
                     case 41:
-                      0 === A + O + y && j--
+                      0 === A + y + O && j--
                       break
                     case 40:
-                      if (0 === A + O + y) {
+                      if (0 === A + y + O) {
                         if (0 === b)
                           switch (2 * D + 3 * F) {
                             case 533:
@@ -1071,19 +1084,19 @@ module.exports = (function(e) {
                       }
                       break
                     case 64:
-                      0 === O + j + A + y + z + h && (h = 1)
+                      0 === y + j + A + O + z + h && (h = 1)
                       break
                     case 42:
                     case 47:
-                      if (!(0 < A + y + j))
-                        switch (O) {
+                      if (!(0 < A + O + j))
+                        switch (y) {
                           case 0:
                             switch (2 * p + 3 * s.charCodeAt(I + 1)) {
                               case 235:
-                                O = 47
+                                y = 47
                                 break
                               case 220:
-                                ;(P = I), (O = 42)
+                                ;(P = I), (y = 42)
                             }
                             break
                           case 42:
@@ -1092,11 +1105,11 @@ module.exports = (function(e) {
                               P + 2 !== I &&
                               (33 === s.charCodeAt(P + 2) &&
                                 (G += s.substring(P, I + 1)),
-                              (w = ''),
-                              (O = 0))
+                              (x = ''),
+                              (y = 0))
                         }
                   }
-                  0 === O && (B += w)
+                  0 === y && (B += x)
               }
               ;(F = D), (D = p), I++
             }
@@ -1144,11 +1157,11 @@ module.exports = (function(e) {
           g = /@(k\w+)\s*(\S*)\s*/,
           m = /::(place)/g,
           k = /:(read-only)/g,
-          w = /[svh]\w+-[tblr]{2}/,
-          x = /\(\s*(.*)\s*\)/g,
+          x = /[svh]\w+-[tblr]{2}/,
+          w = /\(\s*(.*)\s*\)/g,
           v = /([\s\S]*?);/g,
-          y = /-self|flex-/g,
-          O = /[^]*?(:[rp][el]a[\w-]+)[^]*/,
+          O = /-self|flex-/g,
+          y = /[^]*?(:[rp][el]a[\w-]+)[^]*/,
           j = /stretch|:\s*\w+\-(?:conte|avail)/,
           A = /([^-])(image-set\()/,
           C = 1,
@@ -1342,11 +1355,11 @@ module.exports = (function(e) {
             return !1 === t && void 0 !== a ? a : e
         }
       }
-      var w,
-        x,
+      var x,
+        w,
         v = new WeakMap(),
-        y = /label:\s*([^\s;\n{]+)\s*;/g,
-        O = function(e) {
+        O = /label:\s*([^\s;\n{]+)\s*;/g,
+        y = function(e) {
           var t = !0,
             r = '',
             a = ''
@@ -1364,24 +1377,24 @@ module.exports = (function(e) {
               ;(r += k.call(this, a, 46 === r.charCodeAt(r.length - 1))),
                 !0 === t && void 0 !== e[n + 1] && (r += e[n + 1])
             }, this),
-            (x = r),
-            (r = r.replace(y, function(e, t) {
+            (w = r),
+            (r = r.replace(O, function(e, t) {
               return (a += '-' + t), ''
             })),
-            (w = (function(e, t) {
+            (x = (function(e, t) {
               return i(e + t) + t
             })(r, a)),
             r
           )
         }
       function j(e, t) {
-        void 0 === l.inserted[w] && ((r = ''), g(e, t), (l.inserted[w] = r))
+        void 0 === l.inserted[x] && ((r = ''), g(e, t), (l.inserted[x] = r))
       }
       var A = function() {
-        var e = O.apply(this, arguments),
-          t = n + '-' + w
+        var e = y.apply(this, arguments),
+          t = n + '-' + x
         return (
-          void 0 === l.registered[t] && (l.registered[t] = x), j('.' + t, e), t
+          void 0 === l.registered[t] && (l.registered[t] = w), j('.' + t, e), t
         )
       }
       function C(e, t) {
@@ -1426,11 +1439,11 @@ module.exports = (function(e) {
         merge: _,
         getRegisteredStyles: C,
         injectGlobal: function() {
-          j('', O.apply(this, arguments))
+          j('', y.apply(this, arguments))
         },
         keyframes: function() {
-          var e = O.apply(this, arguments),
-            t = 'animation-' + w
+          var e = y.apply(this, arguments),
+            t = 'animation-' + x
           return j('', '@keyframes ' + t + '{' + e + '}'), t
         },
         css: A,
@@ -1443,11 +1456,11 @@ module.exports = (function(e) {
       return k
     }),
       r.d(t, 'a', function() {
-        return w
+        return x
       })
     var m = g('undefined' != typeof global ? global : {}),
       k = (m.flush, m.hydrate, m.cx),
-      w = (m.merge, m.getRegisteredStyles, m.injectGlobal, m.keyframes, m.css)
+      x = (m.merge, m.getRegisteredStyles, m.injectGlobal, m.keyframes, m.css)
     m.sheet, m.caches
   },
   54: function(e, t, r) {

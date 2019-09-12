@@ -51,17 +51,17 @@ module.exports = (function(e) {
       return Object.prototype.hasOwnProperty.call(e, r)
     }),
     (t.p = ''),
-    t((t.s = 226))
+    t((t.s = 160))
   )
 })({
   0: function(e, r) {
     e.exports = require('react')
   },
-  226: function(e, r, t) {
+  160: function(e, r, t) {
     'use strict'
     t.r(r),
-      t.d(r, 'Typography', function() {
-        return c
+      t.d(r, 'DefTable', function() {
+        return i
       })
     var n = t(0),
       o = t(8)
@@ -101,26 +101,13 @@ module.exports = (function(e) {
       }
       return o
     }
-    var c = function(e) {
+    var i = function(e) {
       var r = e.styles,
-        t = (e.destyleMerge, e.el),
-        o = void 0 === t ? 'span' : t,
-        c = (e.size, e.color, e.noWrap, e.spaceAbove, e.spaceBelow, e.children),
-        i = l(e, [
-          'styles',
-          'destyleMerge',
-          'el',
-          'size',
-          'color',
-          'noWrap',
-          'spaceAbove',
-          'spaceBelow',
-          'children'
-        ]),
-        a = o
-      return n.createElement(a, u({ className: r.root }, i), c)
+        t = e.children,
+        o = (e.destyleMerge, l(e, ['styles', 'children', 'destyleMerge']))
+      return n.createElement('dl', u({ className: r.root }, o), t)
     }
-    r.default = Object(o.destyle)(c, 'BB-Typography')
+    r.default = Object(o.destyle)(i, 'BB-DefTable')
   },
   8: function(e, r) {
     e.exports = require('destyle')
